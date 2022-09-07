@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 70px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td,
+        th {
+            border: 1px solid;
+        }
+
+        td,
+        th {
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* td,
+         th {
+            background-color: rgb(23, 122, 183);
+        }  */
+        /* tbody tr{ 
+            background-color: rgb(141, 39, 39);
+        color: aliceblue;
+        } */
+        /* tbody tr:nth-child(even){ 
+            background-color: aqua;
+            color: black;
+        }*/
+        /* tbody tr:nth-child(odd){
+            background-color: blueviolet;
+            color: yellow;
+        } */
+        /* tbody tr:nth-child(3n){
+            background-color: rgb(182, 189, 189);
+            color: crimson;
+        } */
+        tbody tr:nth-child(3n+1){
+            background-color: blueviolet;
+            color: brown;
+        }
+        tbody tr:nth-child(4n+2){
+            background-color: chartreuse;
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>sr nom</th>
+                <th>user name</th>
+                <th>email</th>
+                <th>gender</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>testing name</td>
+                <td>email@.com</td>
+                <td>male</td>
+                <td>
+                    <button>edit</button>
+                    <button>delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>testing name</td>
+                <td>email@.com</td>
+                <td>male</td>
+                <td>
+                    <button>edit</button>
+                    <button>delete</button>
+                </td>
+                <tr>
+                    <td>3</td>
+                    <td>testing name</td>
+                    <td>email@.com</td>
+                    <td>male</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </tr>
+                </td>
+                <tr>
+                    <td>4</td>
+                    <td>testing name</td>
+                    <td>email@.com</td>
+                    <td>male</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>testing name</td>
+                    <td>email@.com</td>
+                    <td>male</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>testing name</td>
+                    <td>email@.com</td>
+                    <td>male</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+
+</html>
