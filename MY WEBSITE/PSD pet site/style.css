@@ -1,0 +1,247 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+  /* border: 1px solid; */
+}
+body {
+  overflow-x: hidden;
+}
+nav ul li {
+  display: inline-block;
+  padding: 50px 35px;
+}
+nav ul li a {
+  color: aliceblue;
+  padding: 5px 8px;
+  font-size: 25px;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+.container-2 {
+  background-color: #fcc302;
+  margin: 0 auto;
+  width: 1300px;
+}
+.head-menu {
+  background-color: #daac00;
+  position: sticky;
+}
+.logo {
+  padding: 25px 62px;
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+}
+.home-txt {
+  background-color: #fcc302;
+  display: flex;
+}
+.col-50 {
+  width: 50%;
+}
+div .upfonts {
+  font-size: 70px;
+  margin-left: 50px;
+  width: 547px;
+  margin-top: 100px;
+  color: aliceblue;
+}
+div .downfonts {
+  font-size: 29px;
+  margin-left: 50px;
+  color: aliceblue;
+}
+button .contact {
+  margin: 100px;
+}
+.dogsimg {
+  margin-left: 140px;
+  width: 350px;
+  margin-top: 30px;
+}
+.menu i {
+  background-color: #00bec9;
+  width: 35px;
+  height: 20px;
+  text-align: center;
+}
+
+.button button {
+  padding: 10px 15px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+.contact {
+  background-color: #00bec9;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+.our-service {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+}
+.video {
+  margin: 50px;
+}
+.sec-txt {
+  margin: 60px;
+}
+.our-service1 {
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  background-color: #fcc302;
+  padding: 15px 25px;
+  font-size: 20px;
+  margin-top: 40px;
+  border: none;
+}
+
+.col-50 {
+  width: 50%;
+  margin: 0 auto;
+}
+.sec-txt h2 {
+  width: 475px;
+  font-size: 50px;
+}
+.sec-txt p {
+  font-size: 29px;
+  width: 450px;
+  margin-top: 40px;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 24px 515px;
+  color: aliceblue;
+}
+.title p {
+  text-align: center;
+  font-size: 40px;
+  width: 742px;
+  margin-left: 320px;
+  color: aliceblue;
+}
+.col-33 {
+  width: 33%;
+}
+
+.psd-img {
+  margin: 100px 100px;
+}
+.col-33 h1 {
+  margin-left: 90px;
+  font-size: 30px;
+}
+.col-33 p {
+  font-size: 30px;
+}
+div .shape-3 {
+  width: 400px;
+  margin: 35px 60px;
+}
+.text-lover {
+  padding: 66px;
+  font-size: 50px;
+}
+.txt-lorem {
+  font-size: 22px;
+  padding: 2px 145px;
+}
+.our-service2 {
+  margin: 0px 275px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  background-color: #fcc302;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+}
+.words {
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  padding: 0px 100px;
+  border: none;
+}
+.buy {
+  background-color: #00bec9;
+  padding: 12px;
+  border-radius: 20px;
+  margin: 0px 120px;
+  text-align: center;
+}
+.counts {
+}
+.servey {
+}
+.back {
+  background-image: url(background-img.png);
+}
+.col-25 {
+  width: 25%;
+}
+.bg-color {
+  background-color: black;
+  color: aliceblue;
+}
+.icon {
+  font-size: 60px;
+  text-align: center;
+  margin: 122px;
+}
+.txt-about ul li {
+  list-style: none;
+  font-size: 20px;
+}
+.txt-about ul li a {
+  color: aliceblue;
+}
+.txt-about h2 {
+  padding: 30px;
+}
+.margin {
+  margin: 100px;
+}
+.mr-left {
+  margin-left: 350px;
+  padding: 40px;
+}
+.mr-p-left {
+  margin-left: 80px;
+  font-size: 30px;
+}
+.ft-input {
+  margin-left: 210px;
+  padding: 22px 43px;
+  margin-top: 25px;
+  background-color: rgb(252, 195, 2);
+  box-sizing: border-box;
+  border: 1px solid;
+  border-right: none;
+  
+}
+button i {
+  font-size: 38px;
+  background-color: #00bec9;
+  padding: 10px;
+  color: white;
+  border-left: none;
+  vertical-align: middle;
+}
+.ft-icon {
+  font-size: 35px;
+  margin-left: 285px;
+  letter-spacing: 10px;
+  margin-top: 10px;
+}

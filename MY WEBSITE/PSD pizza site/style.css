@@ -43,7 +43,7 @@
     vertical-align: middle;
     background-color: red;
   }
-  header {
+  .backg {
     background: url(background.png) no-repeat center center/cover;
     /* width: 1440px; */
     height: 653px;
@@ -51,14 +51,11 @@
   body{
     overflow-x: hidden;
   }
-  .headrimg {
-    display: inline-block;
-  }
+  
   .headrimg img {
-    width: 650px;
+    width: 640px;
     height: 613px;
     position: absolute;
-    display: inline-block;
     margin-left: 250px;
   }
   .spicy {
@@ -132,22 +129,18 @@
     width: 40px;
     top: 570px;
   }
-  .container2{
+  .f-sec{
    background-color: rgb(201, 198, 198);
-   width: 1440px;
-    margin: 0 auto;
+  
   
   }
-  /* .raw2{
-    margin-left: 30px;
-    
-  } */
+  .sp{
+    display: block;
+    margin-left: 20px;
+  }
   .col-25{
     width: 25%;
   }
 .col-25 ul li{
   list-style: none;
-}
-.icon{
-  
 }
