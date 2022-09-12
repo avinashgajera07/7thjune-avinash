@@ -245,3 +245,8 @@ button i {
   letter-spacing: 10px;
   margin-top: 10px;
 }
+@media (min-width:1300px) {
+  .container{
+   width: 540px;
+ }
+}
