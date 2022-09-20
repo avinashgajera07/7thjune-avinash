@@ -11,7 +11,7 @@ body {
 }
 nav ul li {
   display: inline-block;
-  padding: 50px 35px;
+  padding: 50px 29px;
 }
 nav ul li a {
   color: aliceblue;
@@ -20,7 +20,6 @@ nav ul li a {
 }
 .container {
   width: 1300px;
-  /* width: 100%; */
   margin: 0 auto;
 }
 .bg-yellow {
@@ -31,9 +30,11 @@ nav ul li a {
 .head-menu {
   background-color: #daac00;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 .logo {
-  padding: 25px 62px;
+  padding: 20px 62px;
   margin-top: 20px;
 }
 .row {
@@ -60,6 +61,12 @@ div .downfonts {
 }
 button .contact {
   margin: 100px;
+}
+button:hover {
+  cursor: pointer;
+}
+.contact:hover {
+  background-color: bisque;
 }
 .dogsimg {
   margin-left: 140px;
@@ -90,6 +97,10 @@ button .contact {
   border-radius: 5px 5px 5px 5px;
   color: white;
 }
+.our-service:hover {
+  background-color: darkgray;
+  color: black;
+}
 .video {
   margin: 50px;
 }
@@ -105,6 +116,11 @@ button .contact {
   margin-top: 40px;
   border: none;
 }
+.our-service1:hover {
+  background-color: bisque;
+  color: black;
+  border: 2px solid black;
+}
 
 .col-50 {
   width: 50%;
@@ -119,7 +135,39 @@ button .contact {
   width: 450px;
   margin-top: 40px;
 }
-
+.ft-vetcare{
+  font-size: 60px;
+  text-align: center;
+}
+.p-text{
+  padding: 10px 370px;
+  text-align: center;
+  font-size: 30px;
+}
+.doc-name{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.doc-img{
+  margin: 0 45px;
+  height: 310px;
+}
+.post{
+  text-align: center;
+  padding: 10px;
+}
+.ft-icon2{
+  letter-spacing: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #daac00;
+  border-radius: 20px;
+  padding: 10px;
+}
+/* .fa-brands{
+  border-radius: 30px; 
+}*/
 .title h1 {
   text-align: center;
   font-size: 50px;
@@ -168,19 +216,29 @@ div .shape-3 {
   font-size: 12px;
   padding: 10px;
 }
+.our-service2:hover {
+  background-color: bisque;
+  color: black;
+}
 .words {
   margin: 20px;
   font-size: 30px;
   color: white;
   padding: 0px 100px;
   border: none;
+  text-decoration: line-through;
 }
 .buy {
   background-color: #00bec9;
   padding: 12px;
   border-radius: 20px;
-  margin: 0px 120px;
+  margin: 60px 120px;
   text-align: center;
+}
+.buy:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 .back {
   background-image: url(background-img.png);
@@ -206,9 +264,14 @@ div .shape-3 {
 }
 .txt-about h2 {
   padding: 30px;
+  margin: 0 15px;
+}
+.txt-about h2 a {
+  color: white;
 }
 .margin {
   margin: 100px;
+  text-align: center;
 }
 .mr-left {
   margin-left: 350px;
@@ -220,7 +283,7 @@ div .shape-3 {
 }
 .ft-input {
   margin-left: 210px;
-  padding: 22px 43px;
+  padding: 22px 50px;
   margin-top: 25px;
   background-color: rgb(252, 195, 2);
   box-sizing: border-box;
@@ -235,48 +298,62 @@ button i {
   border-left: none;
   vertical-align: middle;
 }
+.fa-telegram {
+  width: 95px;
+}
 .ft-icon {
   font-size: 35px;
   margin-left: 285px;
   letter-spacing: 10px;
   margin-top: 10px;
 }
-/* @media (min-width: 576px) {
-  .container {
-      width: 540px;
-  }
 
+/* 
+ @media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+  .col-25 {
+    width: 100%;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
-      width: 720px;
+    width: 720px;
   }
 
   .col-50 {
-      width: 50%;
+    width: 50%;
   }
 
   .col-25 {
-      width: 25%;
+    width: 25%;
   }
 
   .col-33 {
-      width: 33.33%;
+    width: 50%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      width: 950px;
+    width: 950px;
   }
 
+  .col-33 {
+    width: 33.33%;
+  }
 }
-
 
 @media (min-width: 1300px) {
   .container {
-    width: 540px;
+    width: 1260px;
   }
-}
- */
+}  */
