@@ -11,15 +11,24 @@ body {
 }
 nav ul li {
   display: inline-block;
-  padding: 50px 29px;
+  padding: 33px;
 }
 nav ul li a {
   color: aliceblue;
   padding: 5px 8px;
   font-size: 25px;
 }
+nav input{
+  height: 30px;
+    width: 200px;
+}
+.fa-magnifying-glass{
+  height: 30px;
+  width: 30px;
+}
 .container {
-  width: 1300px;
+  width: 1300px;  
+  /* width: 100%; */
   margin: 0 auto;
 }
 .bg-yellow {
@@ -29,7 +38,7 @@ nav ul li a {
 }
 .head-menu {
   background-color: #daac00;
-  position: sticky;
+  /* position: sticky; */
   position: -webkit-sticky;
   top: 0;
 }
@@ -47,14 +56,14 @@ nav ul li a {
 .col-50 {
   width: 50%;
 }
-div .upfonts {
+.upfonts {
   font-size: 70px;
   margin-left: 50px;
   width: 547px;
   margin-top: 100px;
   color: aliceblue;
 }
-div .downfonts {
+.downfonts {
   font-size: 29px;
   margin-left: 50px;
   color: aliceblue;
@@ -76,8 +85,10 @@ button:hover {
 .menu i {
   background-color: #00bec9;
   width: 35px;
-  height: 20px;
+  height: 32px;
   text-align: center;
+  font-size: 25px;
+  margin-left: -4px;
 }
 
 .button button {
@@ -186,7 +197,7 @@ button:hover {
 }
 
 .psd-img {
-  margin: 100px 100px;
+  margin: 100px 34px;
 }
 .col-33 h1 {
   margin-left: 90px;
@@ -195,7 +206,7 @@ button:hover {
 .col-33 p {
   font-size: 30px;
 }
-div .shape-3 {
+.shape-3 {
   width: 400px;
   margin: 35px 60px;
 }
@@ -307,9 +318,103 @@ button i {
   letter-spacing: 10px;
   margin-top: 10px;
 }
+/* 
+@media (min-width: 425px) {
+  .container {
+    width: 385px;
+  }
+  .col-25 {
+    width: 100%;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+nav input {
+     height: 40px;
+    width: 250px;
+  }
+  
+
+  .upfonts {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: aliceblue;
+    width: 300px;
+  }
+  .downfonts {
+    font-size: 14px;
+  margin-left: 43px;
+  color: aliceblue;
+}
+.button button {
+  padding: 5px 10px;
+  margin-left: 45px;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.dogsimg {
+  margin-left: -245px;
+  width: 153px;
+  margin-top: 175px;
+}
+.sec-txt h2 {
+  width: 160px;
+  font-size: 17px;
+  margin: -20px;
+  margin-top: -35px;
+}
+.sec-txt p {
+  font-size: 18px;
+    width: 198px;
+    margin-top: 35px;
+    margin-left: -20px;
+}
+.our-service1 {
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  background-color: #fcc302;
+  padding: 5px 15px;
+  font-size: 15px;
+  margin-top: 20px;
+  border: none;
+}
+.video {
+  height: 200px;
+  margin-top: 230px;
+  margin-left: -253px;
+}
+.title h1 {
+  font-size: 25px;
+  padding: 20px 125px;
+  color: aliceblue;
+}
+.title p {
+  font-size: 23px;
+  width: 255px;
+  margin-left: 80px;
+  color: aliceblue;
+}
+.col-33 h1 {
+  margin-left: 75px;
+  font-size: 15px;
+}
+.col-33 p {
+  font-size: 11px;
+}
+} */
+
 
 /* 
- @media (min-width: 576px) {
+@media (min-width: 576px) {
   .container {
     width: 540px;
   }
@@ -328,18 +433,16 @@ button i {
   .container {
     width: 720px;
   }
-
-  .col-50 {
-    width: 50%;
-  }
-
   .col-25 {
-    width: 25%;
+    width: 100%;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
   }
 
-  .col-33 {
-    width: 50%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -350,10 +453,13 @@ button i {
   .col-33 {
     width: 33.33%;
   }
+  .col-50{
+    width: 50%;
+  }
 }
 
 @media (min-width: 1300px) {
   .container {
     width: 1260px;
-  }
-}  */
+  } 
+}   */
