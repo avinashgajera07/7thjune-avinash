@@ -11,24 +11,24 @@ body {
 }
 nav ul li {
   display: inline-block;
-  padding: 33px;
+  padding: 41px 19px;
 }
 nav ul li a {
   color: aliceblue;
-  padding: 5px 8px;
-  font-size: 25px;
+  padding: 5px 14px;
+  font-size: 18px;
 }
-nav input{
+nav input {
   height: 30px;
-    width: 200px;
+  width: 200px;
+  margin-left: 12px;
 }
-.fa-magnifying-glass{
+.fa-magnifying-glass {
   height: 30px;
   width: 30px;
 }
 .container {
-  width: 1300px;  
-  /* width: 100%; */
+  width: 1300px;
   margin: 0 auto;
 }
 .bg-yellow {
@@ -38,7 +38,7 @@ nav input{
 }
 .head-menu {
   background-color: #daac00;
-  /* position: sticky; */
+  position: sticky;
   position: -webkit-sticky;
   top: 0;
 }
@@ -48,6 +48,7 @@ nav input{
 }
 .row {
   display: flex;
+  /* flex-wrap: wrap; */
 }
 .home-txt {
   background-color: #fcc302;
@@ -78,8 +79,8 @@ button:hover {
   background-color: bisque;
 }
 .dogsimg {
-  margin-left: 140px;
-  width: 350px;
+  margin-left: 90px;
+  width: 330px;
   margin-top: 30px;
 }
 .menu i {
@@ -114,6 +115,7 @@ button:hover {
 }
 .video {
   margin: 50px;
+  width: 400px;
 }
 .sec-txt {
   margin: 60px;
@@ -146,29 +148,29 @@ button:hover {
   width: 450px;
   margin-top: 40px;
 }
-.ft-vetcare{
+.ft-vetcare {
   font-size: 60px;
   text-align: center;
 }
-.p-text{
+.p-text {
   padding: 10px 370px;
   text-align: center;
   font-size: 30px;
 }
-.doc-name{
+.doc-name {
   font-size: 20px;
   text-align: center;
   font-weight: 600;
 }
-.doc-img{
+.doc-img {
   margin: 0 45px;
-  height: 310px;
+  height: 220px;
 }
-.post{
+.post {
   text-align: center;
   padding: 10px;
 }
-.ft-icon2{
+.ft-icon2 {
   letter-spacing: 10px;
   font-size: 20px;
   text-align: center;
@@ -197,26 +199,35 @@ button:hover {
 }
 
 .psd-img {
-  margin: 100px 34px;
+  margin: 10px 45px;
+}
+.doctor-img {
+  width: 220px;
 }
 .col-33 h1 {
-  margin-left: 90px;
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+  width: 224px;
 }
-.col-33 p {
-  font-size: 30px;
+.p-lorem {
+  font-size: 20px;
+  width: 224px;
 }
 .shape-3 {
   width: 400px;
   margin: 35px 60px;
 }
 .text-lover {
-  padding: 66px;
+  padding: 15px;
   font-size: 50px;
 }
 .txt-lorem {
   font-size: 22px;
-  padding: 2px 145px;
+  padding: 20px;
+}
+.dog-img {
+  width: 220px;
+  margin: 20px 50px;
 }
 .our-service2 {
   margin: 0px 275px;
@@ -232,19 +243,18 @@ button:hover {
   color: black;
 }
 .words {
-  margin: 20px;
+  margin: 20px 120px;
   font-size: 30px;
   color: white;
-  padding: 0px 100px;
   border: none;
   text-decoration: line-through;
 }
 .buy {
   background-color: #00bec9;
-  padding: 12px;
-  border-radius: 20px;
-  margin: 60px 120px;
   text-align: center;
+  border-radius: 20px;
+  width: 80px;
+  margin: 15px 130px;
 }
 .buy:hover {
   background-color: black;
@@ -264,7 +274,13 @@ button:hover {
 .icon {
   font-size: 60px;
   text-align: center;
-  margin: 122px;
+  margin: 120px 160px;
+}
+.counts {
+  font-size: 30px;
+}
+.dose {
+  font-size: 27px;
 }
 .txt-about ul li {
   list-style: none;
@@ -289,7 +305,7 @@ button:hover {
   padding: 40px;
 }
 .mr-p-left {
-  margin-left: 80px;
+  margin-left: 135px;
   font-size: 30px;
 }
 .ft-input {
@@ -318,7 +334,7 @@ button i {
   letter-spacing: 10px;
   margin-top: 10px;
 }
-/* 
+
 @media (min-width: 425px) {
   .container {
     width: 385px;
@@ -334,84 +350,174 @@ button i {
   }
   nav ul li {
     display: inline-block;
-    padding: 20px 15px;
-}
-
-nav input {
-     height: 40px;
-    width: 250px;
+    padding: 0px 60px;
   }
-  
+  .row {
+    flex-wrap: wrap;
+  }
 
+  nav input {
+    height: 25px;
+    width: 150px;
+  }
+  .menu i {
+    width: 35px;
+    height: 25px;
+    font-size: 20px;
+    margin-left: -4px;
+    margin-bottom: 20px;
+  }
   .upfonts {
     font-size: 20px;
     margin-left: 40px;
     margin-top: 30px;
-    color: aliceblue;
     width: 300px;
   }
   .downfonts {
     font-size: 14px;
-  margin-left: 43px;
-  color: aliceblue;
-}
-.button button {
-  padding: 5px 10px;
-  margin-left: 45px;
-  font-size: 10px;
-  margin-top: 20px;
-}
-.dogsimg {
-  margin-left: -245px;
-  width: 153px;
-  margin-top: 175px;
-}
-.sec-txt h2 {
-  width: 160px;
-  font-size: 17px;
-  margin: -20px;
-  margin-top: -35px;
-}
-.sec-txt p {
-  font-size: 18px;
+    margin-left: 43px;
+  }
+  .button button {
+    margin-left: 100px;
+    width: 120px;
+    margin-top: 30px;
+  }
+  .dogsimg {
+    margin-left: 100px;
+    width: 153px;
+    margin-top: 30px;
+  }
+  .sec-txt h2 {
+    width: 160px;
+    font-size: 17px;
+    margin: 20px;
+    margin-top: -35px;
+  }
+  .sec-txt p {
+    font-size: 15px;
     width: 198px;
+    margin: 0 10px;
+  }
+  .our-service1 {
+    font-size: 10px;
+    margin-top: 20px;
+    margin: 15px 40px;
+  }
+  .video {
+    width: 220px;
+    margin-top: -40px;
+  }
+  .title h1 {
+    font-size: 25px;
+    padding: 20px 125px;
+  }
+  .title p {
+    font-size: 23px;
+    width: 257px;
+    margin-left: 70px;
+  }
+  .col-33 h1 {
+    margin-left: 30px;
+    font-size: 20px;
+    width: 202px;
+    text-align: center;
+  }
+  .p-lorem {
+    font-size: 15px;
+    width: 137px;
+    margin-left: 80px;
+  }
+  .doctor-img {
+    width: 200px;
+    margin: 0 30px;
+  }
+  .bg-yellow {
+    width: 385px;
+  }
+  .shape-3 {
+    width: 210px;
+    margin: 25px 75px;
+  }
+  .text-lover {
+    font-size: 15px;
+    width: 380px;
+    text-align: center;
+    padding: 5px;
+  }
+  .txt-lorem {
+    font-size: 15px;
+    padding: 11px;
+  }
+  .our-service2 {
+    margin: 10px 140px;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .dog-img {
+    width: 200px;
+    margin: 0 40px;
+  }
+  .words {
+    margin: 10px;
+    font-size: 20px;
+    padding: 0px 100px;
+  }
+  .buy {
+    border-radius: 20px;
+    margin: 15px 100px;
+  }
+  .ft-vetcare {
+    font-size: 25px;
+  }
+  .p-text {
+    padding: 10px 0px;
+    font-size: 15px;
+  }
+  .doc-img {
+    margin: 0 45px;
+    height: 200px;
+  }
+  .icon {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 120px;
+  }
+  .txt-about h2 {
+    padding: 10px;
+    margin: 0 0px;
+  }
+  .txt-about ul li {
+    font-size: 15px;
+  }
+  .margin {
+    margin: 30px;
+    text-align: center;
+  }
+  .mr-left {
+    margin-left: 100px;
+    padding: 20px;
+  }
+  .mr-p-left {
+    margin-left: 70px;
+    font-size: 20px;
+  }
+  .ft-input {
+    margin-left: 118px;
+    padding: 15px 20px;
     margin-top: 35px;
-    margin-left: -20px;
+  }
+  .fa-telegram {
+    width: 60px;
+    padding: 4px;
+  }
+  .ft-icon {
+    font-size: 25px;
+    margin-left: 165px;
+    letter-spacing: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
-.our-service1 {
-  border-radius: 5px 5px 5px 5px;
-  color: white;
-  background-color: #fcc302;
-  padding: 5px 15px;
-  font-size: 15px;
-  margin-top: 20px;
-  border: none;
-}
-.video {
-  height: 200px;
-  margin-top: 230px;
-  margin-left: -253px;
-}
-.title h1 {
-  font-size: 25px;
-  padding: 20px 125px;
-  color: aliceblue;
-}
-.title p {
-  font-size: 23px;
-  width: 255px;
-  margin-left: 80px;
-  color: aliceblue;
-}
-.col-33 h1 {
-  margin-left: 75px;
-  font-size: 15px;
-}
-.col-33 p {
-  font-size: 11px;
-}
-} */
-
 
 /* 
 @media (min-width: 576px) {
