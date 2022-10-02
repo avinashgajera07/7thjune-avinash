@@ -280,7 +280,7 @@ button:hover {
   font-size: 30px;
 }
 .dose {
-  font-size: 27px;
+  font-size: 20px;
 }
 .txt-about ul li {
   list-style: none;
@@ -334,7 +334,7 @@ button i {
   letter-spacing: 10px;
   margin-top: 10px;
 }
-
+/* 
 @media (min-width: 425px) {
   .container {
     width: 385px;
@@ -424,8 +424,8 @@ button i {
   }
   .p-lorem {
     font-size: 15px;
-    width: 137px;
-    margin-left: 80px;
+    width: 210px;
+    margin-left: 35px;
   }
   .doctor-img {
     width: 200px;
@@ -517,7 +517,7 @@ button i {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-}
+} */
 
 /* 
 @media (min-width: 576px) {
@@ -563,9 +563,138 @@ button i {
     width: 50%;
   }
 }
+   */
 
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   .container {
-    width: 1260px;
-  } 
-}   */
+    width: 1000px;
+  }
+  .col-25 {
+    width: 100%;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
+  }
+  .row {
+    display: flex;
+  }
+  .logo {
+    padding: 15px 62px;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 35px 5px;
+  }
+
+  .dogsimg {
+    margin-left: 50px;
+    width: 300px;
+  }
+  .video {
+    margin: 40px;
+    width: 385px;
+  }
+  .title h1 {
+    padding: 0px 280px;
+    margin-left: 110px;
+  }
+  .title p {
+    font-size: 30px;
+    width: 560px;
+    margin-left: 220px;
+  }
+  .psd-img {
+    margin: 40px 54px;
+  }
+  .shape-3 {
+    width: 400px;
+    margin: 30px 30px;
+  }
+  .bg-yellow {
+    width: 1000px;
+  }
+  .doctor-img {
+    width: 200px;
+  }
+  .p-lorem {
+    font-size: 15px;
+    width: 200px;
+  }
+  .text-lover {
+    width: 535px;
+  }
+  .txt-lorem {
+    font-size: 20px;
+    padding: 20px;
+    width: 535px;
+  }
+  .our-service2 {
+    margin: 0px 230px;
+  }
+  .dog-img {
+    width: 200px;
+  }
+  .words {
+    margin: 0px 85px;
+  }
+  .buy {
+    width: 80px;
+    margin: 15px 100px;
+  }
+  .ft-vetcare {
+    font-size: 50px;
+  }
+  .icon {
+    font-size: 50px;
+    text-align: center;
+    margin: 80px 115px;
+  }
+  .counts {
+    font-size: 25px;
+  }
+  .dose {
+    font-size: 16px;
+  }
+  .p-text {
+    padding: 10px 215px;
+    font-size: 25px;
+  }
+  .doc-img {
+    margin: 0 34px;
+  }
+  .margin {
+    margin: 50px;
+  }
+  .mr-left {
+    margin-left: 260px;
+    padding: 20px;
+  }
+  .mr-p-left {
+    margin-left: 60px;
+    font-size: 25px;
+  }
+  .ft-input {
+    margin-left: 219px;
+    padding: 16px 1px;
+  }
+  .fa-telegram {
+    width: 70px;
+    padding: 5px;
+  }
+  .ft-icon {
+    font-size: 25px;
+    margin-left: 235px;
+    letter-spacing: 10px;
+    margin-top: 10px;
+  }
+  .txt-about ul li {
+    list-style: none;
+    font-size: 15px;
+  }
+  .txt-about h2 {
+    padding: 15px;
+  }
+}
