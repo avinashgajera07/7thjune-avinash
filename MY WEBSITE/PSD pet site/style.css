@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
   text-decoration: none;
-  /* border: 1px solid; */
+  border: 1px solid;
 }
 body {
   overflow-x: hidden;
@@ -28,7 +28,7 @@ nav input {
   width: 30px;
 }
 .container {
-  width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 .bg-yellow {
@@ -38,9 +38,6 @@ nav input {
 }
 .head-menu {
   background-color: #daac00;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
 }
 .logo {
   padding: 20px 62px;
@@ -48,7 +45,7 @@ nav input {
 }
 .row {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .home-txt {
   background-color: #fcc302;
@@ -334,7 +331,7 @@ button i {
   letter-spacing: 10px;
   margin-top: 10px;
 }
-/* 
+ 
 @media (min-width: 425px) {
   .container {
     width: 385px;
@@ -350,7 +347,7 @@ button i {
   }
   nav ul li {
     display: inline-block;
-    padding: 0px 60px;
+    padding: 0;
   }
   .row {
     flex-wrap: wrap;
@@ -369,13 +366,15 @@ button i {
   }
   .upfonts {
     font-size: 20px;
-    margin-left: 40px;
+    margin-left: 71px;
     margin-top: 30px;
-    width: 300px;
+    width: 270px;
   }
   .downfonts {
     font-size: 14px;
-    margin-left: 43px;
+    text-align: justify;
+    width: 250px;
+    padding: 0 20px;
   }
   .button button {
     margin-left: 100px;
@@ -498,26 +497,26 @@ button i {
     padding: 20px;
   }
   .mr-p-left {
-    margin-left: 70px;
+    margin: 0 auto;
     font-size: 20px;
+    width: 200px;
   }
   .ft-input {
-    margin-left: 118px;
-    padding: 15px 20px;
-    margin-top: 35px;
+    padding: 10px;
+    margin-left: 75px;
   }
   .fa-telegram {
-    width: 60px;
-    padding: 4px;
+    width: 50px;
+    padding: 0px;
   }
   .ft-icon {
     font-size: 25px;
-    margin-left: 165px;
+    margin-left: 120px;
     letter-spacing: 6px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-} */
+} 
 
 /* 
 @media (min-width: 576px) {
@@ -568,19 +567,19 @@ button i {
 @media (min-width: 1024px) {
   .container {
     width: 1000px;
+    margin: 0 auto;
   }
+  
   .col-25 {
-    width: 100%;
+    width: 25%;
   }
   .col-33 {
-    width: 100%;
+    width: 33%;
   }
   .col-50 {
-    width: 100%;
+    width: 50%;
   }
-  .row {
-    display: flex;
-  }
+  
   .logo {
     padding: 15px 62px;
   }
@@ -598,7 +597,7 @@ button i {
     width: 385px;
   }
   .title h1 {
-    padding: 0px 280px;
+    padding: 0px 330px;
     margin-left: 110px;
   }
   .title p {
@@ -610,7 +609,7 @@ button i {
     margin: 40px 54px;
   }
   .shape-3 {
-    width: 400px;
+    width: 3  00px;
     margin: 30px 30px;
   }
   .bg-yellow {
@@ -632,7 +631,7 @@ button i {
     width: 535px;
   }
   .our-service2 {
-    margin: 0px 230px;
+    margin: 0px 190px;
   }
   .dog-img {
     width: 200px;
@@ -650,13 +649,13 @@ button i {
   .icon {
     font-size: 50px;
     text-align: center;
-    margin: 80px 115px;
+    margin: 220px 0;
   }
   .counts {
-    font-size: 25px;
+    font-size: 35px;
   }
   .dose {
-    font-size: 16px;
+    font-size: 25px;
   }
   .p-text {
     padding: 10px 215px;
@@ -666,15 +665,16 @@ button i {
     margin: 0 34px;
   }
   .margin {
-    margin: 50px;
+    margin: 0px;
   }
   .mr-left {
-    margin-left: 260px;
-    padding: 20px;
+    margin-left: 320px;
+    padding: 15px;
   }
   .mr-p-left {
-    margin-left: 60px;
+    margin-left: 105px;
     font-size: 25px;
+    width: 392px;
   }
   .ft-input {
     margin-left: 219px;
