@@ -548,22 +548,7 @@ button i {
     width: 100%;
   }
 
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 950px;
-  }
-
-  .col-33 {
-    width: 33.33%;
-  }
-  .col-50{
-    width: 50%;
-  }
-}
-   */
-
+ */
 @media (min-width: 1024px) {
   .container {
     width: 1000px;
