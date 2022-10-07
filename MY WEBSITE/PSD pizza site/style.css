@@ -1,0 +1,146 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+  }
+  .raw {
+    display: flex;
+    margin-left: 30px;
+  }
+  .container{
+    width: 1440px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: 30px;
+    padding: 35px;
+    color: #272d2e;
+    font-size: 20px;
+  }
+  nav ul li img {
+    margin: 5px;
+  }
+  .home-txt{
+    position: relative;
+  }
+
+  .logo {
+    width: 95px;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  .icon1 {
+    height: 20px;
+    vertical-align: middle;
+    background-color: red;
+  }
+  .backg {
+    background: url(background.png) no-repeat center center/cover;
+    /* width: 1440px; */
+    height: 653px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  
+  .headrimg img {
+    width: 640px;
+    height: 613px;
+    position: absolute;
+    margin-left: 250px;
+  }
+  .spicy {
+    letter-spacing: -5px;
+    color: #d50306;
+    font-size: 124px;
+    margin-left: 80px;
+    
+  }
+  .pizza {
+    font-size: 150px;
+    margin-left: 60px;
+    top: 80px;
+    position: absolute;
+  }
+  .text {
+    margin-left: 60px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-top: 114px;
+  }
+  .raw1 {
+    display: flex;
+  }
+  .text2 {
+    margin-left: 60px;
+     line-height: 150px;
+  }
+  .add {
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: #ffcf29;
+    color: #272d2e;
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .text2 .btn1{
+    background-color: #d50306;
+    border: red;
+    border-radius: 10px 10px 10px 10px;
+    width: 92px;
+    height: 40px;
+  }
+  .text2 a {
+    color: white;
+    font-size: 20px;
+  }
+  .text2 .btn2 {
+    width: 92px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #cfcfcf;
+    border: #cfcfcf;
+  }
+  .dot-img{
+    position: relative;
+  }
+  .img-dot{
+    position: absolute;
+    top: 570px;
+    left: 150px;
+    width: 80px;
+  }
+  .lashn{
+    position: relative;
+  }
+  .img-lashn img{
+    position: absolute;
+    width: 40px;
+    top: 570px;
+  }
+  .f-sec{
+   background-color: rgb(201, 198, 198);
+  
+  
+  }
+  .sp{
+    display: block;
+    margin-left: 20px;
+  }
+  .col-25{
+    width: 25%;
+  }
+.col-25 ul li{
+  list-style: none;
+}
