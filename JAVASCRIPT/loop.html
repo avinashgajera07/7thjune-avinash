@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 5
+        // console.log(a++);
+        // console.log(++a);
+        //  // for (init; condition; increment/decrement) 
+        //      for (let index =0 ; index <10 ; index++){
+        //         console.log(index++);
+        //      }
+             whiledata = 7;
+             while (whiledata < 10) {
+                console.log("inside while")
+                whiledata++;
+             }
+
+            //  do...while () is only the exit controlled loop
+             dowhiledata = 50;
+             do {
+                 console.log("inside do while")
+                 dowhiledata++;
+             }
+            while (dowhiledata < 10);
+
+            var a_result = [90,94,89,76,95];
+            a_result.forEach(element => {
+                console.log(element);
+            });
+            var a_result_object = {"maths":95,"science":94,"hindi":89,"guj":76,"history":95};  
+            for (const anything in a_result_object) {
+          console.log(anything);
+          console.log(a_result_object[anything]);
+        }
+        for (const kaipan of Object.entries(a_result_object)){
+            console.log(kaipan);
+        }
+        Object.entries(a_result_object).map((key,value) =>{
+            console.log("key is ",key);
+            console.log("value is ",value);
+        })
+
+    </script>
+</body>
+</html>
