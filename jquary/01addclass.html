@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div{
+    background: white;
+}
+.red{
+    background: red;
+}
+.red.green{
+    background: green;
+}
+.customclass{
+    background-color: saddlebrown;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<body>
+    <div>Thise div should be white</div>
+    <div class="red">Thise div will be green because it now has the "green" and "red" classes.
+       It would be red if the addclass function failed.</div>
+   <div>This div should be white</div>
+
+   <p>There are zero green divs</p>
+   <span id="mypar">There are zero change divs</span>
+   <button onclick="addclass()">click me</button>
+
+   <script>
+       function addclass(){
+        $("#mypar").addClass("customclass");
+       }
+
+       $( "div" ).addClass(function( index, currentClass ) {
+  var addedClass;
+ alert(index);
+ alert(currentClass);
+  if ( currentClass === "red" ) {
+    addedClass = "green";
+    $( "p" ).text( "There is one green div" );
+  }
+ 
+  return addedClass;
+});
+   </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+p{
+    margin: 8px;
+    font-size: 16px;
+}
+.selected{
+    color: red;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<body>
+     <p>This paragraph is black and is the frist paragraph.</p>
+     <p class="selected">This paragraph is red and is the secound paragraph </p><br>
+     <div class="appendhtml">Thise paragraph is secound paragraph.</div>
+
+     <div id="result1">first paragraph has selection class</div>
+     <div id="result2">Secound paragraph has selected class</div>
+     <div id="result3">At least one paragraph has selected class</div>
+
+     <script>
+     
+     $(".appendhtml").html("<a href='#'>click secound</a>")
+     $(".selected").append("<a href='#'>click me</a>");
+     $( "#result1" ).append( $( "p" ).first().hasClass( "selected" ).toString() );
+$( "#result2" ).append( $( "p" ).last().hasClass( "selected" ).toString() );
+$( "#result3" ).append( $( "p" ).hasClass( "selected" ).toString() ) ;
+
+     </script>
+</body>
+</html>
