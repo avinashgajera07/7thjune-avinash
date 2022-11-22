@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 60px;
+            padding: 10px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            background: red;
+            cursor: pointer;
+        }
+        .mod{
+            background: blue;
+            cursor: default;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+
+    <script>
+        var modwidth = 60;
+        $("div").one("click", function(){
+        $(this).innerWidth(modwidth).addClass("mod"); 
+        modwidth -= 8
+        });
+    </script>
+</body>
+</html>

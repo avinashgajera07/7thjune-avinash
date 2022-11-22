@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin-left: 10px;
+            color: blue;
+            width: 200px;
+            cursor: pointer;
+        }
+        div{
+            color: red;
+            cursor: pointer;
+        }
+        span{
+            color: red;
+            cursor: pointer;
+        }
+        .abs{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 220px;
+            top: 35px;
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+    <div id="result">click an element</div>
+    <p>
+        thise is the best way to <span>find</span> an offset.
+    </p>
+    <div class="abs">
+    </div>
+
+    <script>
+        username = "tops"
+        console.log(username+"SG");
+        $("*",document.body).click(function (event){
+            var offset = $(this).offset();
+            console.log(offset);
+
+            event.stopPropagation();
+            $("#result").text(this.tagname +"coords(" + offset.left + ","+ offset.top +")");
+        }
+        );
+    </script>
+</body>
+</html>
