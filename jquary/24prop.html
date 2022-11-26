@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prop demo</title>
+    <style>
+      img {
+        padding: 10px;
+      }
+      div {
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" checked="checked" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" checked="checked" />
+
+    <script>
+      $("input[type='checkbox']").prop({(disabled :'true')});
+    </script>
+  </body>
+</html>
