@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript to css</title>
+    <style>
+        div{
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+        }
+        #box1{
+            width: 50px;
+            color: yellow;
+            background-color: blue;
+        }
+        #box2{
+            width: 80px;
+            color: red;
+            background-color: orange;
+        }#box3{
+            width: 40px;
+            color: green;
+            background-color: greenyellow;
+        }#box4{
+            width: 70px;
+            color: palegreen;
+            background-color: blueviolet;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+    <p id="result">&nbsp;</p>
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+
+    <script>
+        $("div").click(function () {
+            var html = ["the clicked div has the following style"];
+
+            var styleprops = $(this).css(["width","height","color","background-color"]);
+            $(this).css("color")
+            $(this).css("color","red")
+            console.log(styleprops);
+
+            $.each(styleprops,function (prop,value) {
+                console.log(prop);
+                html.push(prop + ":" + value);
+            });
+            $("result").html(html.join("br"));
+        });
+    </script>
+</body>
+</html>
