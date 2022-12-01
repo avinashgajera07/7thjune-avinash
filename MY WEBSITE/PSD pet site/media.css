@@ -1,4 +1,4 @@
- @media (min-width: 425px) {
+  @media (min-width: 425px) {
   .container {
     width: 385px;
   }
@@ -13,22 +13,25 @@
   }
   nav ul li {
     display: inline-block;
-    padding: 0;
+    padding: 15px;
+    margin-top: 5px;
   }
   .row {
     flex-wrap: wrap;
   }
   .logo {
-    padding: 10px 0px;
-    margin-top: 15px;
+    padding: 5px 0px;
+    margin-top: 10px;
+    
   }
   nav input {
     height: 25px;
     width: 150px;
+    margin-left: 0;
   }
   nav ul li a {
-    padding: 0px 15px;
-    font-size: 18px;
+    padding: 0px 5px;
+    font-size: 15px;
   }
   .menu i {
     width: 35px;
@@ -55,25 +58,24 @@
     margin-top: 30px;
   }
   .dogsimg {
-    margin-left: 100px;
+    margin-left: 110px;
     width: 153px;
     margin-top: 30px;
   }
   .sec-txt h2 {
-    width: 160px;
+    width: 285px;
     font-size: 17px;
-    margin: 20px;
-    margin-top: -35px;
+    margin: -30px -20px;
+    
   }
   .sec-txt p {
     font-size: 15px;
-    width: 198px;
-    margin: 0 10px;
+    width: 258px;
+    margin: 37px -1px;
   }
   .our-service1 {
     font-size: 10px;
-    margin-top: 20px;
-    margin: 15px 40px;
+    margin: -20px 55px;
   }
   .video {
     width: 220px;
@@ -166,7 +168,7 @@
     text-align: center;
   }
   .mr-left {
-    margin-left: 100px;
+    margin-left: 108px;
   }
   .mr-p-left {
     margin: 0 auto;
@@ -188,9 +190,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-}
- 
-@media (min-width: 768px) {
+} 
+
+ @media (min-width: 768px) {
     .container {
       width: 720px;
     }
@@ -220,7 +222,7 @@
     }
     .downfonts {
       font-size: 20px;
-      width: 320px;
+      width: 350px;
       margin: 0px 180px;
     }
     .button button {
@@ -246,7 +248,7 @@
     .sec-txt p {
       font-size: 19px;
       width: 320px;
-      margin: 0px 150px;
+      margin: 0px 145px;
     }
     .our-service1 {
       font-size: 10px;
@@ -303,7 +305,7 @@
       margin: 10px 210px;
     }
     .words {
-      margin: 0px 190px;
+      margin: 0px 160px;
       font-size: 25px;
     }
     .buy {
@@ -367,8 +369,8 @@
       letter-spacing: 10px;
       width: 215px;
     }
-  
-   @media (min-width: 1024px) { 
+ }
+  @media (min-width: 1024px) { 
     .container {
       width: 1000px;
       margin: 0 auto;
@@ -393,9 +395,9 @@
       width: 60%;
     }
     .sec-txt h2 {
-      width: 435px;
-      font-size: 40px;
-      margin-top: 25px;
+      width: 376px;
+      font-size: 35px;
+      margin: 0 60px;
     }
     .sec-txt {
       margin: 30px;
@@ -462,14 +464,14 @@
       width: 497px;
     }
     .our-service2 {
-      margin: 20px 190px;
+      margin: 0px 210px;
     }
     .dog-img {
       width: 75%;
       margin: 0 34px;
     }
     .words {
-      margin: 0px 95px;
+      margin: 10px 4px;
     }
     .buy {
       width: 80px;
@@ -493,6 +495,7 @@
     }
     .p-text {
       font-size: 25px;
+      margin-left: 250px;
     }
     .doc-img {
       margin: 0 34px;
@@ -531,4 +534,3 @@
       padding: 20px;
     }
   }
-  
