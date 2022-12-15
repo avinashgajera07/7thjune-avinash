@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <style>
+      body {
+        text-align: center;
+        display: block;
+        background-color: #000;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      .clock {
+        background: black;
+        color: rgb(11, 239, 247);
+        border: 4px solid rgb(11, 239, 247);
+        position: absolute;
+        padding: 10px 20px;
+        font-size: 100px;
+        border-radius: 5px;
+        left: 11%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class="clock" id="clock"></div>
+    <script>
+      function showTime() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+        if (h == 0) {
+          h = 12;
+        }
+        if (h >= 12) {
+          session = "PM";
+        }
+        if (h > 12) {
+          h = h - 12;
+        }
+        m = m < 10 ? (m = "0" + m) : m;
+        s = s < 10 ? (s = "0" + s) : s;
+        var time = h + ":" + m + ":" + s + " " + session;
+        $("#clock").html(time);
+        setTimeout(showTime, 1000);
+      }
+      showTime();
+    </script>
+  </body>
+</html>
