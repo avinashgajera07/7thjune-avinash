@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Conversion</title>
+  </head>
+  <body>
+    <pre>
+        The object-to-primitive conversion is called automatically by many built-in functions and operators that expect a primitive as a value.
+
+        There are 3 types (hints) of it:
+
+        "string" (for alert and other operations that need a string)
+        "number" (for maths)
+        "default" (few operators, usually objects implement it the same way as "number")
+        The specification describes explicitly which operator uses which hint.
+
+        The conversion algorithm is:
+
+        Call obj[Symbol.toPrimitive](hint) if the method exists,
+        Otherwise if hint is "string"
+        try calling obj.toString() or obj.valueOf(), whatever exists.
+        Otherwise if hint is "number" or "default"
+        try calling obj.valueOf() or obj.toString(), whatever exists.
+        All these methods must return a primitive to work (if defined).
+    </pre>
+
+    <script>
+      let object = "12";
+      console.log(typeof object);
+      let num = "1";
+      // console.log(typeof num);
+      console.log(num.__proto__);
+      
+      //maths (except binery plus)
+      let user = {
+        name: "avinash",
+        money: 1000,
+
+        [Symbol.toPrimitive](hint) {
+          alert(`hint: ${hint}`);
+          return hint == "string" ? `{name: "${this.name}"}` : this.money;
+        },
+      };
+
+      // conversions demo:
+      alert(user); 
+      alert(+user);
+      alert(user + 500); 
+    </script>
+  </body>
+</html>
