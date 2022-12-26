@@ -55,10 +55,10 @@
         unshift(...items) adds items to the beginning.
         To loop over the elements of the array:
 
-        for (let i=0; i<arr.length; i++) – works fastest, old-browser-compatible.
-        for (let item of arr) – the modern syntax for items only,
-        for (let i in arr) – never use.
-        To compare arrays, don’t use the == operator (as well as >, < and others), as they have no special treatment for arrays. They handle them as any objects, and it’s not what we usually want.
+        for (let i=0; i<arr.length; i++) - works fastest, old-browser-compatible.
+        for (let item of arr) - the modern syntax for items only,
+        for (let i in arr) - never use.
+        To compare arrays, do not use the = operator (as well as >,  and others), as they have no special treatment for arrays. They handle them as any objects, and it's not what we usually want.
 
         Instead you can use for..of loop to compare arrays item-by-item.
 
@@ -68,22 +68,22 @@
       <li>
         <p>To add/remove elements:</p>
         <ul>
-          <li><code>push(...items)</code> – adds items to the end,</li>
-          <li><code>pop()</code> – extracts an item from the end,</li>
-          <li><code>shift()</code> – extracts an item from the beginning,</li>
-          <li><code>unshift(...items)</code> – adds items to the beginning.</li>
+          <li><code>push(...items)</code> - adds items to the end,</li>
+          <li><code>pop()</code> - extracts an item from the end,</li>
+          <li><code>shift()</code> - extracts an item from the beginning,</li>
+          <li><code>unshift(...items)</code> - adds items to the beginning.</li>
           <li>
-            <code>splice(pos, deleteCount, ...items)</code> – at index
+            <code>splice(pos, deleteCount, ...items)</code> - at index
             <code>pos</code> deletes <code>deleteCount</code> elements and
             inserts <code>items</code>.
           </li>
           <li>
-            <code>slice(start, end)</code> – creates a new array, copies
+            <code>slice(start, end)</code> - creates a new array, copies
             elements from index <code>start</code> till <code>end</code> (not
             inclusive) into it.
           </li>
           <li>
-            <code>concat(...items)</code> – returns a new array: copies all
+            <code>concat(...items)</code> - returns a new array: copies all
             members of the current one and adds <code>items</code> to it. If any
             of <code>items</code> is an array, then its elements are taken.
           </li>
@@ -93,7 +93,7 @@
         <p>To search among elements:</p>
         <ul>
           <li>
-            <code>indexOf/lastIndexOf(item, pos)</code> – look for
+            <code>indexOf/lastIndexOf(item, pos)</code> - look for
             <code>item</code> starting from position <code>pos</code>, return
             the index or <code>-1</code> if not found.
           </li>
