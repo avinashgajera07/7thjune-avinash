@@ -1,0 +1,10 @@
+.panel-light{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+.panel-dark{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+}
