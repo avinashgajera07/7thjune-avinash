@@ -72,8 +72,8 @@
         let username = document.getElementById("username").value;
         if (username == "") {
           console.log("This field is required");
-          document.getElementById("usernameError").innerText = "<b>This field is required</b>";
-        //   document.getElementById("usernameError").innerHTML = "<b>This field is required</b>";
+          // document.getElementById("usernameError").innerText = "<b>This field is required</b>";
+          document.getElementById("usernameError").innerHTML = "<b>This field is required</b>";
         } else {
           document.getElementById("usernameError").innerHTML = "";
         }
