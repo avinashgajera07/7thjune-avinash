@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box 2px solid;
+
+  }
+.name{
+    display: flex;
+}
+.Lastname{
+    margin-left: 20px;
+}
+.address{
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 14px;
+}
+.Cancle{
+    margin-left: 50px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 2px;
+    padding: 3px;
+}
+.Submit{
+    background-color: dodgerblue;
+    color: aliceblue;
+    border-radius: 2px;
+    padding: 3px;
+}

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.cocotel.com/frontend/icons/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Cocotel Hotel & Resorts</title>
+  </head>
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px; /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f0f0f0; /* Background color of the scrollbar track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #22c55e; /* Green color for the scrollbar thumb */
+      border-radius: 4px; /* Round edges for the scrollbar thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #16a34a; /* Darker green on hover */
+    }
+
+    /* Custom CSS for arrow buttons */
+    button[aria-label="Previous Slide"],
+    button[aria-label="Next Slide"] {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button[aria-label="Previous Slide"]:hover,
+    button[aria-label="Next Slide"]:hover {
+      background-color: #e5e5e5;
+    }
+  </style>
+  <body class="font-serif">
+    <!-- Loader -->
+    <div
+      id="loader"
+      class="flex items-center justify-center fixed inset-0 bg-white z-50"
+    >
+      <img
+        src="https://img.cocotel.com/frontend/others/cocotel_loading.png"
+        alt="Loader"
+        class="animate-bounce"
+      />
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+      <header>
+        <nav class="bg-white shadow-md">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+              <!-- Logo -->
+              <a href="#">
+                <img
+                  src="https://www.cocotel.com/frontend/images/Cocotel_Logo_New_Alfa-crop.png"
+                  alt="Company Logo"
+                  class="h-10"
+                />
+              </a>
+
+              <!-- Links for Larger Screens -->
+              <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-green-600 hover:text-green-900">Home</a>
+                <a href="#" class="text-green-600 hover:text-green-900"
+                  >Explore</a
+                >
+                <a href="#" class="text-green-600 hover:text-green-900"
+                  >Events</a
+                >
+                <a href="#" class="text-green-600 hover:text-green-900">Blog</a>
+                <a href="#" class="text-green-600 hover:text-green-900"
+                  >About</a
+                >
+                <a href="#" class="text-green-600 hover:text-green-900"
+                  >Career</a
+                >
+                <a href="#">
+                  <button
+                    class="bg-green-700 p-2 rounded-md text-white px-6 hover:bg-green-800"
+                  >
+                    Login
+                  </button>
+                </a>
+
+                <!-- Dropdown -->
+                <div class="relative">
+                  <button
+                    id="dropdownNavbarLinkLarge"
+                    class="bg-green-700 text-white px-4 py-2 rounded-md flex items-center hover:bg-green-800"
+                  >
+                    <span>Country</span>
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="dropdownNavbarLarge"
+                    class="hidden absolute bg-white shadow-md rounded-md mt-2 w-40 z-50"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >USA</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Australia</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Malaysia</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hamburger Icon for Smaller Screens -->
+              <div class="md:hidden">
+                <button
+                  id="menu-button"
+                  class="text-gray-600 hover:text-gray-900 focus:outline-none"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+              id="mobile-menu"
+              class="hidden flex-col space-y-2 mt-4 md:mt-0 md:flex-row md:space-y-0 md:space-x-4"
+            >
+              <a href="#" class="text-green-600 hover:text-green-900">Home</a>
+              <a href="#" class="text-green-600 hover:text-green-900"
+                >Explore</a
+              >
+              <a href="#" class="text-green-600 hover:text-green-900">Events</a>
+              <a href="#" class="text-green-600 hover:text-green-900">Blog</a>
+              <a href="#" class="text-green-600 hover:text-green-900">About</a>
+              <a href="#" class="text-green-600 hover:text-green-900">Career</a>
+              <a href="#">
+                <button
+                  class="bg-green-700 p-2 rounded-md text-white px-10 hover:bg-green-800"
+                >
+                  Login
+                </button>
+              </a>
+
+              <!-- Dropdown -->
+              <div class="relative">
+                <button
+                  id="dropdownNavbarLinkMobile"
+                  class="bg-green-700 text-white px-4 py-2 rounded-md flex items-center hover:bg-green-800 mb-4"
+                >
+                  <span>Country</span>
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  id="dropdownNavbarMobile"
+                  class="hidden absolute bg-white shadow-md rounded-md mt-2 w-40 z-50"
+                >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >USA</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Australia</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >Malaysia</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="container pt-7 relative">
+        <section class="home grid justify-center pt-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 gap-x-0 text-center max-w-6xl"
+          >
+            <!-- Left Text Section -->
+            <div class="col-span-12 md:col-span-6">
+              <div
+                class="escape-the-ordinary-main bg-neutral-200 p-10 rounded-tl-3xl h-full shadow-2xl"
+              >
+                <p class="mt-sm-5-custom wow slideUp text-center md:text-left">
+                  <span class="text-5xl md:text-7xl font-bold text-green-600"
+                    >Just</span
+                  ><br />
+                  <span class="text-5xl md:text-7xl font-bold text-green-600"
+                    >Unpacked!</span
+                  >
+                </p>
+                <p class="pt-4 text-gray-700 text-sm md:text-base">
+                  Just unpacked! Welcome to our new look website. Discover the
+                  Cocotel Collection, featuring 4-5 star hotels and resorts.
+                  Each property is meticulously selected for explorers, business
+                  travelers, and leisure seekers seeking unique experiences.
+                  With over 300+ hotels, book directly for the best pricing and
+                  exclusive deals!
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Image Section -->
+            <div class="col-span-12 md:col-span-6">
+              <div class="h-full">
+                <img
+                  src="https://www.cocotel.com/frontend/images/cocotel-image4.jpg"
+                  alt="Cocotel Collection"
+                  class="w-full h-auto rounded-tr-3xl shadow-2xl"
+                />
+              </div>
+            </div>
+
+            <!-- Search Bar Section -->
+            <div
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-11/12 md:w-3/4 lg:w-2/3 z-20"
+            >
+              <div
+                class="bg-white rounded-full shadow-lg p-4 flex flex-wrap md:flex-nowrap items-center space-y-4 md:space-y-0 md:space-x-4"
+              >
+                <!-- Location Input -->
+                <div
+                  class="flex items-center flex-1 bg-gray-100 rounded-full px-4 py-2"
+                >
+                  <span class="text-green-500 mr-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <select
+                    class="w-full bg-transparent outline-none text-gray-600"
+                    id="slug"
+                    name="hotel"
+                    required
+                  >
+                    <option value="" disabled selected>Location</option>
+                    <option value="Batangas">Batangas</option>
+                    <option value="Quezon">Quezon</option>
+                    <!-- Add more options here -->
+                  </select>
+                </div>
+
+                <!-- Date Picker -->
+                <div
+                  class="flex items-center flex-1 bg-gray-100 rounded-full px-4 py-2"
+                >
+                  <span class="text-green-500 mr-2">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                  <input
+                    type="date"
+                    class="w-full bg-transparent outline-none text-gray-600"
+                  />
+                </div>
+
+                <div
+                  class="relative flex items-center flex-1 bg-gray-100 rounded-full px-4 py-2"
+                >
+                  <span class="text-green-500 mr-2">
+                    <i class="fa fa-user" onclick="toggleDropdown()"></i>
+                  </span>
+                  <span
+                    class="adults-number font-r-18 cursor-pointer"
+                    onclick="toggleDropdown()"
+                  >
+                    1
+                  </span>
+                  Adults -
+                  <span
+                    class="room-number font-r-18 cursor-pointer"
+                    onclick="toggleDropdown()"
+                  >
+                    1
+                  </span>
+                  Room
+                  <div
+                    id="dropdown-menu"
+                    class="dropdown-content-person-select hidden absolute top-full mt-2 left-0 bg-white p-4 shadow-lg rounded-lg w-64"
+                  >
+                    <!-- Adults Section -->
+                    <div
+                      class="dropdown-item-person-select flex justify-between items-center mb-4"
+                    >
+                      <label for="adults" class="text-gray-700">Adults</label>
+                      <div class="counter flex items-center space-x-2">
+                        <button
+                          class="minus px-2 py-1 bg-gray-200 rounded"
+                          onclick="updateCount('adults', -1)"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="number"
+                          class="hederguest text-center w-12 border rounded"
+                          name="noofguest"
+                          id="adults"
+                          value="1"
+                          readonly
+                        />
+                        <button
+                          class="plus px-2 py-1 bg-gray-200 rounded"
+                          onclick="updateCount('adults', 1)"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Rooms Section -->
+                    <div
+                      class="dropdown-item-person-select flex justify-between items-center"
+                    >
+                      <label for="rooms" class="text-gray-700">Rooms</label>
+                      <div class="counter flex items-center space-x-2">
+                        <button
+                          class="minus px-2 py-1 bg-gray-200 rounded"
+                          onclick="updateCount('rooms', -1)"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="number"
+                          class="hederroom text-center w-12 border rounded"
+                          id="rooms"
+                          name="room"
+                          value="1"
+                          readonly
+                        />
+                        <button
+                          class="plus px-2 py-1 bg-gray-200 rounded"
+                          onclick="updateCount('rooms', 1)"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      class="done-button font-b-16 mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 w-full"
+                      onclick="toggleDropdown()"
+                    >
+                      Done
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Button -->
+                <button
+                  class="px-6 py-4 bg-green-500 text-white rounded-full hover:bg-green-600"
+                >
+                  <i class="fa fa-search mr-2"></i> Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Hotels Section -->
+      <div class="flex justify-center items-center pt-12">
+        <section class="pt-4 max-w-7xl py-8 mt-16">
+          <p class="text-4xl font-bold text-gray-800 ml-4">
+            Our Most Visited Hotels and Resorts
+          </p>
+          <div class="flex relative h-20">
+            <p class="text-gray-600 mt-4 ml-4 max-w-lg absolute left-0">
+              Discover #CocotelCollections and exceptional stays in the
+              Philippines. Explore Batangas, Cebu, and more top destinations.
+            </p>
+            <button
+              class="absolute right-0 bg-green-200 p-2 text-green-600 rounded-md px-9"
+            >
+              View All
+            </button>
+          </div>
+
+          <!-- Location Filters -->
+          <div class="flex flex-wrap justify-start space-x-3 mt-6 ml-4">
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Batangas
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Cebu
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Siargao
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Oriental Mindaro
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Palawan
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Laguna
+            </button>
+            <button class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-green-300">
+              Metro Malina
+            </button>
+          </div>
+
+          <!-- Cards Section -->
+          <div
+            class="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 justify-center items-center max-w-5xl"
+          >
+            <!-- Card 1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="https://www.cocotel.com/public/admin/upload/hotel/1678813358_DJI_20230227_091250_126.png"
+                alt="Resort Image"
+                class="w-full"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">
+                  El Pueblo De Hermano Resort
+                </h2>
+                <p class="text-sm text-gray-600 mt-1">Lian, Philippines</p>
+                <p class="text-lg font-bold text-red-600">$48 Per Night</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="https://img.cocotel.com/frontend/hotels/75/shoreland-beach-resort-by-cocotel.png"
+                alt="Resort Image"
+                class="w-full"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">
+                  Ilawoods Sanctuary and Resort by Cocotel
+                </h2>
+                <p class="text-sm text-gray-600 mt-1">Lemery, Philippines</p>
+                <div class="flex items-center mt-2">
+                  <span class="text-yellow-500 text-sm">☆☆☆☆☆</span>
+                  <span class="text-gray-500 text-sm ml-2">(No Ratings)</span>
+                </div>
+                <p class="text-sm text-gray-500 line-through mt-2">
+                  $93 Per Night
+                </p>
+                <p class="text-lg font-bold text-red-600">$75 Per Night</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="https://img.cocotel.com/frontend/hotels/105/ilawoods-sanctuary-and-resort-by-cocotel.png"
+                alt="Resort Image"
+                class="w-full"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">
+                  Shoreland Beach Resort by Cocotel
+                </h2>
+                <p class="text-sm text-gray-600 mt-1">Nasugbu, Philippines</p>
+                <div class="flex items-center mt-2">
+                  <span class="text-yellow-500 text-sm">★★★★☆</span>
+                  <span class="text-gray-500 text-sm ml-2">(1130 Ratings)</span>
+                </div>
+                <p class="text-sm text-gray-500 line-through mt-2">
+                  $57 Per Night
+                </p>
+                <p class="text-lg font-bold text-red-600">$40 Per Night</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- <section>
+      <div class="container">
+        <div class="row mt-7">
+          <div class="grid grid-cols-2 columns-md text-center mt-5">
+            <p class="font-bold">Discover What Cocotel has to offer</p>
+            <p class="font-bold">
+              Unlock your adventure with Cocotel. Explore our collection of
+              hotels and resorts in beachside, cityscape, and mountain settings.
+              Book now with No queues, no crowds—all discounted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col justify-center md:flex-row items-center md:items-start mt-20 gap-6"
+        >
+          <!-- Left Section -->
+          <div class="max-w-80 md:w-1/2 text-center md:text-left">
+            <p
+              class="font-bold max-w-80 text-4xl wow slideUp"
+              data-wow-delay="1s"
+            >
+              Discover What Cocotel has to Offer
+            </p>
+            <p
+              class="max-w-xs font-normal text-lg mt-4 wow slideUp"
+              data-wow-delay="1s"
+            >
+              Unlock your adventure with Cocotel. Explore our collection of
+              hotels and resorts in beachside, cityscape, and mountain settings.
+              Book now with No queues, no crowds—all discounted.
+            </p>
+            <a
+              class="ml-10 bg-green-600 text-white py-2 px-6 rounded mt-6 inline-block font-bold text-lg"
+              href="https://www.cocotel.com/resorts-hotels"
+            >
+              Explore
+            </a>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="w-full md:w-1/2 grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10"
+          >
+            <!-- Card 1 -->
+            <a
+              href="https://www.cocotel.com/beach-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/perfect-2.svg"
+                alt="Beach"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Beach</p>
+            </a>
+            <!-- Card 2 -->
+            <a
+              href="https://www.cocotel.com/nature-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/nature.png"
+                alt="Nature"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Nature</p>
+            </a>
+            <!-- Card 3 -->
+            <a
+              href="https://www.cocotel.com/resorts-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/resorts.svg"
+                alt="Resorts"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Resorts</p>
+            </a>
+            <!-- Card 4 -->
+            <a
+              href="https://www.cocotel.com/farms-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/home-line.svg"
+                alt="Farms"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Farms</p>
+            </a>
+            <!-- Card 5 -->
+            <a
+              href="https://www.cocotel.com/culture-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/culture.png"
+                alt="Culture"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Culture</p>
+            </a>
+            <!-- Card 6 -->
+            <a
+              href="https://www.cocotel.com/city-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/ph_city-light.svg"
+                alt="City"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">City</p>
+            </a>
+            <!-- Card 7 -->
+            <a
+              href="https://www.cocotel.com/islands-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/fluent_beach-20-regular.svg"
+                alt="Islands"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Islands</p>
+            </a>
+            <!-- Card 8 -->
+            <a
+              href="https://www.cocotel.com/swimmingpool-type-hotels-resorts"
+              class="no-underline text-center bg-white shadow-md p-9 rounded hover:shadow-lg transition duration-200"
+            >
+              <img
+                src="https://www.cocotel.com/frontend/images/swimmer.svg"
+                alt="Swimming Pool"
+                class="mx-auto mb-3"
+              />
+              <p class="font-medium text-lg text-black">Swimming Pool</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-14 px-20">
+      <div
+        class="container md:px-8 flex flex-col md:flex-row items-center rounded-2xl overflow-hidden relative"
+      >
+        <!-- Left Arrow -->
+        <button
+          class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2 hover:bg-gray-200"
+          aria-label="Previous Slide"
+        >
+          <i class="fa fa-chevron-left text-green-500"></i>
+        </button>
+
+        <!-- Left Image Section -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://img.cocotel.com/frontend/hotels/278/casa-marco-suites-g1867.jpg"
+            alt="Casa Marco Suites"
+            class="w-full max-h-80 object-cover rounded-l-2xl"
+          />
+        </div>
+
+        <!-- Right Content Section -->
+        <div class="w-full md:w-1/2 bg-green-100 p-8 rounded-r-2xl relative">
+          <h2 class="text-xl font-bold mb-4">Discover Something New</h2>
+          <h3 class="text-3xl font-semibold text-green-700">
+            Casa Marco Suites
+          </h3>
+          <p class="text-gray-700 mt-4 max-h-20 overflow-auto">
+            Welcome to Casa Marco Suites, our latest #CocotelCollections
+            addition! Nestled in a serene location, this boutique hotel combines
+            elegance and comfort with modern amenities. Enjoy the tranquil
+            garden, refreshing pool, and delicious in-house dining. Perfect for
+            a romantic getaway or a relaxing escape.
+          </p>
+          <button
+            class="mt-6 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
+          >
+            Explore More
+          </button>
+        </div>
+        <button
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2 hover:bg-gray-200"
+          aria-label="Next Slide"
+        >
+          <i class="fa fa-chevron-right text-green-500"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="relative py-14 px-20">
+      <div
+        class="container md:px-8 flex flex-col md:flex-row items-center rounded-2xl overflow-hidden relative"
+      >
+        <!-- Left Arrow -->
+        <button
+          class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2 hover:bg-gray-200"
+          aria-label="Previous Slide"
+        >
+          <i class="fa fa-chevron-left text-green-500"></i>
+        </button>
+
+        <!-- Right Content Section (Now on the left side) -->
+        <div class="w-full md:w-1/2 bg-green-100 p-8 rounded-l-2xl relative">
+          <h2 class="text-2xl font-bold mb-4">
+            El Pueblo De Hermano Resort by Cocotel
+          </h2>
+
+          <p class="text-gray-700 mt-4 max-h-20 overflow-auto">
+            The staffs are very accomodating and their dishes are at affordable
+            prices. The shore isnt their best asset as it usually low tide in
+            the area but the rooms, garden and dinning area are very clean. The
+            rooms are also spacious. The pool just needs a little cleaning as
+            there are fine sand/dust floating around. But generally, this is a
+            very nice place to chill and bond with your family.
+          </p>
+          <button
+            class="mt-6 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
+          >
+            Explore More
+          </button>
+        </div>
+
+        <!-- Left Image Section (Now on the right side) -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://img.cocotel.com/frontend/hotels/1/el-pueblo-de-hermano-resort-by-cocotel.jpeg"
+            alt="Casa Marco Suites"
+            class="w-full max-h-80 object-cover rounded-r-2xl"
+          />
+        </div>
+
+        <!-- Right Arrow -->
+        <button
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2 hover:bg-gray-200"
+          aria-label="Next Slide"
+        >
+          <i class="fa fa-chevron-right text-green-500"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-green-600 text-white py-8 px-28 mt-10">
+      <div class="container mx-auto px-4 md:px-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start"
+        >
+          <!-- Social Media -->
+          <div class="mb-6 md:mb-0">
+            <p class="text-lg mb-4">Stay Coconnected with us</p>
+            <div class="flex gap-14 text-2xl">
+              <a href="#" aria-label="Facebook" class="hover:text-gray-200">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="hover:text-gray-200">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="TikTok" class="hover:text-gray-200">
+                <i class="fa fa-google"></i>
+              </a>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex flex-col items-center mb-6 md:mb-0">
+              <img
+                src="https://www.cocotel.com/frontend/images/cocotel-footer-logo.svg"
+                alt="Cocotel Logo"
+                class="w-52 min-h-20 mb-2"
+              />
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex flex-col md:flex-row gap-16">
+            <!-- About Cocotel -->
+            <div>
+              <p class="font-bold text-lg mb-4">About Cocotel</p>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Explore</a></li>
+              </ul>
+            </div>
+
+            <!-- Partner With Us -->
+            <div>
+              <p class="font-bold text-lg mb-4">Partner With Us</p>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Contact us</a></li>
+                <li><a href="#" class="hover:underline">Career</a></li>
+              </ul>
+            </div>
+
+            <!-- Events -->
+            <div>
+              <p class="font-bold text-lg mb-4">Events</p>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Main Events</a></li>
+                <li><a href="#" class="hover:underline">Meeting</a></li>
+                <li><a href="#" class="hover:underline">Milestones</a></li>
+                <li><a href="#" class="hover:underline">Weddings</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="mt-8 text-lg">
+          © 2024 Cocotel International. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Loader
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        setTimeout(() => {
+          loader.style.display = "none";
+          document.getElementById("content").classList.remove("hidden");
+        }, 1500);
+      });
+
+      // Hamburger Menu
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Dropdown Menu
+      const dropdownButton = document.getElementById("dropdownNavbarLink");
+      const dropdownMenu = document.getElementById("dropdownNavbar");
+
+      dropdownButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      // Close Dropdown if clicked outside
+      window.addEventListener("click", (event) => {
+        if (
+          !dropdownButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+
+      function updateCount(field, change) {
+        const inputField = document.getElementById(field);
+        const currentValue = parseInt(inputField.value);
+        const newValue = currentValue + change;
+
+        // Prevent negative values
+        if (newValue >= 1) {
+          inputField.value = newValue;
+
+          // Update display in the spans (optional)
+          if (field === "adults") {
+            document.querySelector(".adults-number").textContent = newValue;
+          } else if (field === "rooms") {
+            document.querySelector(".room-number").textContent = newValue;
+          }
+        }
+      }
+
+      function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown-menu");
+        dropdown.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
