@@ -1,0 +1,743 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid green; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1650px;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-33 {
+    width: 33%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+
+.col-31 {
+    width: 30%;
+}
+
+.col-14 {
+    width: 14%;
+}
+
+
+
+
+.pos-ab {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.home-bg {
+    background-image: url('../img/home\ bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    padding: 0 30px;
+    background-color: black;
+    text-align: center;
+}
+
+.nav {
+    top: -9px;
+}
+
+.list ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.list ul li a {
+    font-size: 17px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #d4d3d3;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.logo img {
+    width: 100%;
+}
+
+.phone a img {
+    width: 100%;
+}
+
+.bar {
+    display: none;
+}
+
+/* ===================================================================== */
+
+/* hover-effect */
+
+.list ul li a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    margin-top: 3px;
+
+}
+
+.list ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.list ul li a:hover {
+    color: white;
+}
+
+.phone :hover {
+    background-color: transparent;
+    transition: all 1s;
+
+    border-radius: 50%;
+}
+
+/* ====================================================================== */
+
+.choice {
+    padding: 150px 0 0 0;
+    align-items: center;
+}
+
+.choice h4 {
+    font-size: 26px;
+    letter-spacing: 17px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.choice h1 {
+    font-size: 100px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/* headr-end */
+
+/* section-1 (provide)-start */
+
+.provide p {
+
+    font-size: 22px;
+    line-height: 36px;
+    color: #2c2c2c;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 140px 237px;
+}
+
+.service-tx {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #233e50;
+    width: 100%;
+    height: 777px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.service-tx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-tx h3 {
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.app h3 {
+    font-size: 31px;
+}
+
+.service-tx h2 {
+    background-color: #ffffff;
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 65%;
+    color: #295068;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.service-tx p {
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 47px 72px;
+}
+
+.tax .new-bulids h2 {
+    width: 52%;
+}
+
+.tax .new-bulids h3 {
+    font-size: 40px;
+    letter-spacing: 7px;
+    width: 57%;
+    margin: 0 auto;
+}
+
+.production h3 {
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.production h2 {
+    background-color: #ffffff;
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 76%;
+    color: #295068;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.production p {
+    padding: 47px 92px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+/* ================================================ */
+
+/* .service-tx h2:hover {
+   
+    transition: all 2s;
+    -webkit-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+} */
+
+.service-tx:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================================================ */
+
+
+
+/* section-1 (provide)-end */
+
+/* section-2 -start- (Painting) */
+
+.Painting {
+    background-image: url("../img/pantining.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    /* height: 1060px; */
+    border-top: 4px solid white;
+}
+
+.difference {
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.difference h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.difference h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+.dots {
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px 250px;
+}
+
+
+.dots .Construction img {
+    margin: -22px 0;
+    padding: 10px 0;
+}
+
+.dots-tx {
+    border-right: 1px solid rgb(161, 160, 160);
+}
+
+.Finishing {
+    border-right: none;
+}
+
+.dots-tx p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.name-tx input::placeholder {
+    color: #d4d3d3;
+}
+
+.name-tx input {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: 400;
+    border: none;
+    font-family: "Montserrat";
+    border-bottom: 1px solid rgb(170, 164, 164);
+    background-color: transparent;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.more-1 {
+    text-align: center;
+    justify-content: space-around;
+    padding: 40px 120px;
+}
+
+.more {
+    padding: 30px 171px;
+}
+
+.tell textarea {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #d4d3d3;
+    font-weight: 400;
+    border: none;
+    font-family: "Montserrat";
+    border-bottom: 1px solid rgb(170, 164, 164);
+    background-color: transparent;
+    padding: 30px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.send {
+    text-align: center;
+    padding: 70px 0 190px 0;
+}
+
+.send button {
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 68px;
+    text-transform: uppercase;
+    color: #193946;
+    font-weight: 600;
+    font-family: "Montserrat";
+    background-color: #ffffff;
+    padding: 0 47px;
+    border: 2px solid white;
+
+}
+
+/* ============================================================ */
+.send button:hover {
+    background-color: transparent;
+    color: white;
+    outline: 1px solid white;
+    outline-offset: 3px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+
+/* ============================================================ */
+
+/* section-2 -end- (Painting) */
+
+/* section-3 -start (intex) */
+
+.inetx {
+    padding: 100px 0 0px 0;
+}
+
+.intex-ca {
+    z-index: 1;
+    left: 716px;
+    margin: -32px 0;
+}
+
+.intex-ca a {
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #314857;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: white;
+    padding: 27px 30px;
+
+}
+
+.intex-tx h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #193541;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.intex-img img {
+    /* height: 200px; */
+    justify-content: center;
+    width: 100%;
+    padding: 0 2px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+
+
+/* =============================================================== */
+
+/* hover-effect */
+.intex-img {
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.intex-img:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+.intex-img {
+    position: relative;
+}
+
+.intex-img::before {
+    position: absolute;
+    top: 0%;
+    left: -75%;
+    /* z-index: 2; */
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+
+}
+
+.intex-img:hover::before {
+    -webkit-animation: shine .1s;
+    animation: shine .90s;
+    cursor: pointer;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+
+}
+
+.intex-ca a:hover {
+    background-color: #24465c;
+    color: white;
+    border-radius: 5px;
+    transition: all 2s ease-in-out;
+}
+
+.intex-ca a {
+    /* transition: all 2s ease-in-out; */
+}
+
+
+
+/* ============================================== */
+
+/* section-3 -end (intex) */
+
+
+/* section-4- start(privacy)  */
+
+.privacy {
+    text-align: center;
+    padding: 0 250px;
+    height: 557px;
+}
+
+
+.privacy-tx img {
+    padding-bottom: 20px;
+}
+
+.privacy-tx p a {
+    font-size: 24px;
+    letter-spacing: 6px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #314857;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+.email a {
+    font-size: 21px;
+    line-height: 39px;
+    color: #6c6c6c;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.banks p {
+    font-size: 21px;
+    line-height: 29px;
+    color: #6c6c6c;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.contact-info .roller {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+    max-width: 100%;
+    top: -166px;
+}
+
+.privacy-tx:first-child {
+    padding-top: 150px;
+}
+
+.banks:last-child {
+    padding-top: 150px;
+}
+
+.lake-tx {
+    position: absolute;
+    top: -68px;
+    left: 0;
+    margin: 0 -9px;
+    width: 100%;
+    z-index: 6;
+}
+
+.lake-tx p {
+    font-size: 13px;
+    line-height: 0px;
+    color: white;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.social {
+    margin: 30px auto 00px;
+
+}
+
+.social img {
+    padding-bottom: 28px;
+}
+
+.social p a {
+    font-size: 13px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* =========================================================== */
+.social p:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.banks p:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* =========================================================== */
+
+
+/* footer-start */
+.f-bg {
+    background-color: #e5e5e5;
+    padding: 10px 0;
+
+}
+
+
+.process ul li {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+/* ============================================================== */
+
+.process ul li a:hover {
+    color: #0d2839;
+    cursor: pointer;
+}
+
+.creative p:hover {
+    color: #0d2839;
+    cursor: pointer;
+}
+
+/* ============================================================== */
+
+
+
+.process ul li a {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #474747;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.creative p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #474747;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: right;
+}
+
+.creative p a {
+    color: rgb(41, 40, 40);
+}
+
+/* section-4- end(privacy)  */

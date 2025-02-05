@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: #333;
+            /* font-family: 'Open Sans', sans-serif; */
+            /* font-weight: 300; */
+        }
+
+        h1,
+        h1+p {
+            /* margin: 30px 15px 0; */
+            /* font-weight: 300; */
+        }
+
+        h1+p a {
+            /* color: #333; */
+        }
+
+        h1+p a:hover {
+            /* text-decoration: none; */
+        }
+
+        h2 {
+            /* margin: 60px 15px 0; */
+            /* padding: 0; */
+            /* font-weight: 300; */
+        }
+
+        h2 span {
+            /* margin-left: 1em; */
+            /* color: #aaa; */
+            /* font-size: 85%; */
+        }
+
+        .column {
+            /* margin: 15px 15px 0; */
+            /* padding: 0; */
+        }
+
+        .column:last-child {
+            /* padding-bottom: 60px; */
+        }
+
+        .column::after {
+            /* content: ''; */
+            /* clear: both; */
+            /* display: block; */
+        }
+
+        .column div {
+            /* position: relative; */
+            /* float: left; */
+            /* width: 300px; */
+            /* height: 200px; */
+            /* margin: 0 0 0 25px; */
+            /* padding: 0; */
+        }
+
+        .column div:first-child {
+            /* margin-left: 0; */
+        }
+
+        /* .column div span {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: 0;
+        } */
+
+        figure {
+            width: 300px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        figure:hover+span {
+            bottom: -36px;
+            opacity: 1;
+        }
+
+
+        /* Circle */
+        .hover15 figure {
+            position: relative;
+        }
+
+        .hover15 figure::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* z-index: 2; */
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, .2);
+            border-radius: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        .hover15 figure:hover::before {
+            -webkit-animation: circle .75s;
+            animation: circle .75s;
+            cursor: pointer;
+        }
+
+        @-webkit-keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+
+
+
+        /* =========================== */
+
+
+
+
+
+        .hover14 figure {
+            position: relative;
+        }
+
+        .hover14 figure::before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+
+        .hover14 figure:hover::before {
+            -webkit-animation: shine .75s;
+            animation: shine .75s;
+        }
+
+        @-webkit-keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+    </style>
+
+    <style>
+        .hover08 figure img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover08 figure:hover img {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+
+        .banks  img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .banks:hover img {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+
+
+    </style>
+
+    <!--=======hove effect social incons================ -->
+
+<style>
+    .icons-img  ul li a  img{
+ transition: .5s;
+  }
+  
+  .icons-img ul li a img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #093050;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .icons-img ul li a img:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 16px #042d3d;
+  }
+  
+ .icons-img ul li a img:hover {
+    color: #06233f;
+    box-shadow: 0 0 6px #03263d;
+    text-shadow: 0 0 6px #0a2650;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h2 id="demo15">15. Circle</h2>
+
+    <div class="hover15 column">
+        <div>
+            <figure><img src="sec-3-1.png" /></figure>
+        </div>
+
+    </div>
+
+
+    <div class="col-14 denu ">
+        <div class="intex-img">
+            <img src="./sec-3-12.png" alt="" style="padding: 10px;">
+        </div>
+    </div>
+
+
+
+
+    <div class="col-30 ">
+        <div class="banks">
+            <img src="./sec-3-12.png" alt="">
+            <p>1091 Dee Bank Rd
+                Muskoka Lakes ON
+                P0B 1M0</p>
+        </div>
+    </div>
+
+
+    <div class="hover08 column">
+        <div>
+            <figure>
+                <img src="./sec-3-1.png" />
+            </figure>
+
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+
+</html>

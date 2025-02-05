@@ -1,0 +1,1188 @@
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+
+    .choice h1 {
+        font-size: 70px;
+    }
+
+    .provide p {
+        font-size: 21px;
+        padding: 100px 91px;
+    }
+
+    .app h3 {
+        font-size: 25px;
+    }
+
+    .tax .new-bulids h3 {
+        font-size: 25px;
+        width: 71%;
+    }
+
+    .production h3 {
+        font-size: 25px;
+    }
+
+    .service-tx h2 {
+        font-size: 38px;
+    }
+
+    .production h2 {
+        font-size: 38px;
+        width: 78%;
+    }
+
+    .service-tx p {
+        padding: 43px 21px;
+    }
+
+    .production p {
+        width: 71%;
+        margin: 0 auto;
+    }
+
+    .intex-ca {
+        z-index: 1;
+        left: 457px;
+        margin: -32px 0;
+    }
+
+    .banks p {
+        padding: 20px 68px;
+    }
+
+    .contact-info .roller {
+        top: -185px;
+    }
+
+    .lake-tx a img {
+        width: 50%;
+    }
+
+    .lake-tx {
+        top: -102px;
+
+    }
+
+    .social a img {
+        width: 7%;
+        padding: 0 0px 37px 0;
+    }
+
+    .social img {
+        padding-bottom: 15px;
+    }
+
+    .contact-info .roller {
+        top: -164px;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 66px;
+        height: 509px;
+    }
+}
+
+
+
+/* ========================================================= */
+
+@media (max-width :1400px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .list ul li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .phone a img {
+        width: 84%;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    .choice h1 {
+        font-size: 50px;
+    }
+
+    .provide p {
+        font-size: 20px;
+        padding: 80px 91px;
+    }
+
+    .service-tx h2 {
+        font-size: 32px;
+    }
+
+    .production h2 {
+        font-size: 31px;
+        width: 78%;
+    }
+
+    .service-tx p {
+        font-size: 15px;
+    }
+
+    .production p {
+        font-size: 15px;
+    }
+
+    .app h3 {
+        font-size: 22px;
+    }
+
+    .difference h3 {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .difference h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .dots {
+        padding: 50px 170px;
+    }
+
+    .more-1 {
+        padding: 40px 102px;
+    }
+
+    .more {
+        padding: 30px 132px;
+    }
+
+    .send button {
+        line-height: 58px;
+    }
+
+    .intex-tx h2 {
+        font-size: 42px;
+    }
+
+    .intex-ca {
+        left: 366px;
+        margin: -32px 0;
+    }
+
+    .intex-ca a {
+        font-size: 30px;
+        line-height: 43px;
+        padding: 20px 21px;
+    }
+
+    .intex-ca {
+        left: 378px;
+        margin: -30px 0;
+    }
+
+
+
+    .privacy-tx p a {
+        font-size: 19px;
+    }
+
+    .email a {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .contact-info .roller {
+        top: -128px;
+    }
+
+    .lake-tx {
+        top: -100px;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 66px;
+        height: 425px;
+    }
+
+    .contact-info .roller {
+        top: -163px;
+    }
+
+    .banks p {
+        font-size: 18px;
+    }
+
+    .home-bg {
+        padding: 0 10px;
+    }
+}
+
+/* ============================================================ */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .logo img {
+        width: 74%;
+    }
+
+    .nav {
+        top: 15px;
+    }
+
+    .phone a img {
+        width: 66%;
+    }
+
+    .list ul li {
+        display: inline-block;
+        padding: 0 13px;
+    }
+
+    .list ul li a {
+        font-size: 15px;
+    }
+
+    .home-bg {
+        text-align: center;
+        height: 700px;
+    }
+
+    .provide p {
+        font-size: 17px;
+        padding: 63px 35px;
+    }
+
+    .production h2 {
+        font-size: 24px;
+        width: 77%;
+        line-height: 43px;
+    }
+
+    .production p {
+        font-size: 14px;
+    }
+
+    .service-tx h2 {
+        font-size: 24px;
+        line-height: 43px;
+    }
+
+    .service-tx p {
+        font-size: 14px;
+        padding: 43px 10px;
+    }
+
+    .app h3 {
+        font-size: 19px;
+    }
+
+    .tax .new-bulids h3 {
+        font-size: 19px;
+    }
+
+    .production h3 {
+        font-size: 19px;
+    }
+
+    .difference h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .difference h2 {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 52px;
+    }
+
+    .dots {
+        padding: 48px 97px;
+    }
+
+    .intex-tx h2 {
+        font-size: 36px;
+    }
+
+    .intex-ca a {
+        font-size: 26px;
+        line-height: 43px;
+        padding: 18px 18px;
+    }
+
+    .intex-tx h2 {
+        padding: 0 0 44px 0;
+    }
+
+    .intex-ca a {
+        font-size: 26px;
+        padding: 18px 18px;
+    }
+
+    .intex-ca {
+        left: 306px;
+        margin: -43px 0;
+    }
+
+    .banks p {
+        padding: 20px 34px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .process ul li a {
+        font-size: 14px;
+    }
+
+    .contact-info .roller {
+        top: -135px;
+    }
+
+    .privacy-tx img {
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .banks img {
+        width: 45px;
+        margin: 0 auto;
+    }
+
+    .lake-tx {
+        top: -104px;
+        margin: 0 -7px;
+    }
+
+    .social a img {
+        width: 7%;
+        padding: 0 0px 25px 0;
+    }
+
+    .lake-tx p {
+        margin: 0 auto;
+        width: 72%;
+    }
+
+    .privacy-tx p a {
+        font-size: 17px;
+        line-height: 32px;
+    }
+
+
+
+}
+
+/* ============================================================ */
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 740px;
+        margin: 0 auto;
+        max-width: 100%;
+
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .phone {
+        width: 12%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .list ul li a {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .list ul li {
+        display: inline-block;
+        padding: 0 9px;
+    }
+
+    .phone a img {
+        width: 100%;
+    }
+
+    .home-bg {
+        text-align: center;
+        height: 600px;
+    }
+
+    .list ul li a {
+        font-size: 14px;
+    }
+
+    .choice h4 {
+        font-size: 23px;
+    }
+
+    .choice h4 {
+        font-size: 21px;
+    }
+
+    .choice h1 {
+        font-size: 32px;
+    }
+
+    .choice {
+        padding: 123px 0 0 0;
+    }
+
+    .choice h4 {
+        padding-bottom: 20px;
+    }
+
+    .provide p {
+        font-size: 15px;
+        padding: 63px 31px;
+        line-height: 29px;
+    }
+
+    .service-tx {
+        height: 500px;
+    }
+
+    .app h3 {
+        font-size: 15px;
+    }
+
+    .tax .new-bulids h3 {
+        font-size: 15px;
+    }
+
+    .production h3 {
+        font-size: 15px;
+    }
+
+    .service-tx h2 {
+        font-size: 18px;
+        line-height: 43px;
+    }
+
+    .service-tx h3 {
+        line-height: 39px;
+    }
+
+    .production p {
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    .difference {
+        padding: 80px 0 50px 0;
+    }
+
+    .difference h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .difference h2 {
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .dots-tx p {
+        font-size: 14px;
+    }
+
+    .dots {
+        padding: 48px 2px;
+    }
+
+    .more-1 {
+        padding: 40px 0px;
+    }
+
+    .more {
+        padding: 30px 19px;
+    }
+
+    .intex-ca {
+        left: 214px;
+        margin: -34px 0;
+    }
+
+    .inetx {
+        padding: 60px 0 0px 0;
+    }
+
+    .intex-ca a {
+        font-size: 23px;
+        padding: 11px 10px;
+    }
+
+    .intex-tx h2 {
+        padding: 0 0 33px 0;
+    }
+
+
+    .process ul li {
+        padding: 20px 10px;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 31px;
+        height: 320px;
+    }
+
+    .privacy-tx:first-child {
+        padding-top: 44px;
+    }
+
+    .banks:last-child {
+        padding-top: 57px;
+    }
+
+    .email a {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .lake-tx a img {
+        width: 45%;
+    }
+
+    .social {
+        margin: 19px auto 0px;
+    }
+
+    .social a img {
+        width: 7%;
+        padding: 0 0px 18px 0;
+    }
+
+    .lake-tx p {
+        margin: 0 auto;
+        width: 63%;
+    }
+
+    .contact-info .roller {
+        top: -121px;
+    }
+
+    .lake-tx {
+        top: -90px;
+    }
+
+    .privacy-tx p a {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .banks p {
+        padding: 20px 34px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================================ */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .col-100 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .col-30 {
+        width: 50%;
+    }
+
+    .col-14 {
+        width: 33%;
+
+    }
+
+    .col-31 {
+        width: 50%;
+    }
+
+
+
+    /* ======== toggle menu */
+
+    .bar {
+        display: block;
+        font-size: 40px;
+        padding: 0 10px;
+        color: aliceblue;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .list {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        transition: all 0.6s ease-in-out;
+        background-color: #09191f;
+        display: block;
+        width: 300px;
+        z-index: 999;
+        height: 100%;
+    }
+
+    .list ul li {
+        display: block;
+        padding: 35px 0;
+        text-align: center;
+    }
+
+    .list ul .light {
+        padding: 10px 0;
+    }
+
+    .list ul li a {
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .list.show {
+        left: 0;
+    }
+
+    ul li::after {
+        display: none;
+    }
+
+    /* ================= */
+
+    .logo {
+        width: 25%;
+    }
+
+    .nav {
+        top: 15px;
+        padding: 0 10px;
+    }
+
+    .choice h4 {
+        font-size: 15px;
+    }
+
+    .choice h4 {
+        font-size: 15px;
+        letter-spacing: 11px;
+        line-height: 20px;
+    }
+
+    .choice {
+        padding: 160px 0 0 0;
+    }
+
+    .choice h1 {
+        font-size: 30px;
+        letter-spacing: 8px;
+        width: 86%;
+        line-height: 42px;
+    }
+
+    .provide p {
+        font-size: 14px;
+        padding: 30px 28px;
+    }
+
+    .service-tx {
+        margin: 2px 4px;
+    }
+
+    .service-tx p {
+        font-size: 14px;
+        padding: 32px 11px;
+    }
+
+    .difference h3 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .difference h2 {
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+
+    .dots-tx {
+        border: none;
+    }
+
+    .more-1 {
+        padding: 15px 0px;
+    }
+
+    .dots {
+        padding: 23px 2px;
+    }
+
+    .more {
+        padding: 20px 29px;
+    }
+
+    .name-tx input {
+        margin: 0 0 22px 2px
+    }
+
+    .send button {
+        line-height: 50px;
+        padding: 0 30px;
+    }
+
+    .intex-tx h2 {
+        padding: 0 0 34px 0;
+    }
+
+    .intex-tx h2 {
+        font-size: 30px;
+    }
+
+    .intex-ca {
+        left: 158px;
+        margin: -34px 0;
+    }
+
+    .our {
+
+        justify-content: center;
+    }
+
+
+    .contact-info .roller {
+        display: none;
+    }
+
+    .lake-tx {
+        top: -8px;
+        width: 239px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #24465c;
+        margin: 2px 0px;
+    }
+
+    .order:nth-child(2) {
+        order: 3;
+        display: grid;
+        place-items: center;
+    }
+
+    .order:nth-child(3) {
+        order: 2;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 31px;
+        height: 430px;
+    }
+
+    .privacy-tx img {
+        width: 50px;
+        margin: 0 auto;
+    }
+
+
+
+    .lake-tx a img {
+        width: 39%;
+        margin: 7px;
+    }
+
+    .creative p {
+        margin: 0 auto;
+        width: 308px;
+    }
+
+    .lake-tx a img {
+        width: 73%;
+        margin: 3px;
+    }
+
+
+    .social {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    .social a img {
+        width: 100%;
+        padding: 15px 0px 8px 0;
+    }
+
+    .process ul li {
+        width: 143px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .lake-tx p {
+        font-size: 14px;
+        line-height: 23px;
+        width: 220px;
+        margin: 0 -105px;
+    }
+
+    .creative {
+        margin: 0 auto;
+    }
+
+
+}
+
+
+/* ============================================================ */
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .col-14 {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-31 {
+        width: 100%;
+    }
+
+    .process ul li {
+        width: 102px;
+    }
+
+    .lake-tx {
+        top: -16px;
+        width: 239px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #24465c;
+        margin: 2px 0px;
+    }
+
+    .banks img {
+        width: 39px;
+        margin: 0 auto;
+    }
+
+    .privacy-tx:first-child {
+        padding-top: 19px;
+    }
+
+    .banks p {
+        padding: 16px 0 39px 8px;
+    }
+
+    .banks img {
+        width: 39px;
+    }
+
+    .intex-ca a {
+        font-size: 17px;
+        padding: 12px 9px;
+    }
+
+    .intex-ca {
+        left: 118px;
+    }
+
+    .intex-tx h2 {
+        font-size: 21px;
+        line-height: 26px;
+    }
+
+    .difference h3 {
+        font-size: 14px;
+    }
+
+    .difference h2 {
+        font-size: 24px;
+    }
+
+    .send button {
+        line-height: 40px;
+        padding: 0 26px;
+    }
+
+    .tell textarea {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 16px 0px;
+    }
+
+    .more-1 {
+        padding: 1px 0px;
+    }
+
+    .name-tx input {
+        margin: 0 0 17px 0px;
+    }
+
+    .production h2 {
+        width: 48%;
+    }
+
+    .service-tx p {
+        font-size: 14px;
+        padding: 14px 11px;
+    }
+
+    .tax .new-bulids h2 {
+        width: 34%;
+    }
+
+    .tax .new-bulids h3 {
+        font-size: 14px;
+    }
+
+    .service-tx h2 {
+        width: 46%;
+    }
+
+    .app h3 {
+        font-size: 14px;
+    }
+
+    .service-tx p {
+        font-size: 14px;
+        padding: 14px 97px;
+    }
+
+    .provide p {
+        font-size: 14px;
+        padding: 30px 0px;
+    }
+
+    .choice h4 {
+        font-size: 14px;
+    }
+
+    .home-bg {
+        text-align: center;
+        height: 500px;
+    }
+
+    .choice h1 {
+        font-size: 21px;
+        letter-spacing: 8px;
+        width: 94%;
+        line-height: 35px;
+    }
+
+    .choice {
+        padding: 126px 0 0 0;
+    }
+}
+
+/* ============================================================ */
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+
+
+    .col-100 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+
+    .col-31 {
+        width: 100%;
+    }
+
+    .col-14 {
+        width: 100%;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 31px;
+        height: 550px;
+    }
+
+    .banks p {
+        padding: 16px 0 39px 0px;
+    }
+
+    .banks:last-child {
+        padding-top: 29px;
+    }
+
+    .lake-tx {
+        top: -3px;
+        margin: 2px -122px;
+    }
+
+    .intex-tx h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .intex-ca a {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    .intex-ca {
+        left: 85px;
+    }
+
+    .inetx {
+        padding: 44px 0 0px 0;
+    }
+
+    .intex-ca {
+        left: 155px;
+        margin: -36px 0;
+    }
+
+    .send button {
+        font-size: 14px;
+        line-height: 34px;
+        padding: 3px 15px;
+    }
+
+    .tell textarea {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 21px 0 41px 10px;
+    }
+
+    .difference {
+        letter-spacing: 1px;
+        line-height: 49px;
+    }
+
+    .intex-ca {
+        left: 48px;
+        margin: -36px 0;
+    }
+
+    .difference h2 {
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    .service-tx p {
+        font-size: 14px;
+        padding: 14px 47px;
+    }
+
+    .service-tx h2 {
+        width: 63%;
+    }
+
+
+
+    .tax .new-bulids h2 {
+        width: 43%;
+    }
+
+
+    .choice h4 {
+
+        letter-spacing: 5px;
+    }
+
+    .choice h1 {
+        font-size: 17px;
+        letter-spacing: 6px;
+        line-height: 33px;
+    }
+
+    .choice {
+        padding: 136px 0 0 0;
+    }
+
+    .logo {
+        width: 36%;
+    }
+
+    .process {
+        text-align: center;
+    }
+
+    .process ul li {
+        padding: 13px 10px;
+    }
+
+    .creative p {
+        margin: 0 auto;
+        width: 308px;
+        padding: 10px 0;
+    }
+
+    .privacy {
+        text-align: center;
+        padding: 1px 20px;
+        height: 550px;
+    }
+
+    .intex-img img {
+        /* height: 200px; */
+        justify-content: center;
+        width: 80%;
+        padding: 0 0px;
+        margin: 0 auto;
+    }
+
+    .intex-img {
+        text-align: center;
+    }
+
+}
+
+/* ============================================================ */
