@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align {
+    align-items: center;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-30 {
+    width: 33.33%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+.col-90 {
+    width: 90%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/* ==============header============== */
+
+.home-bg {
+    background: url(./img/header.jpg) center/cover no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 100vh;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.list ul li {
+    display: inline-block;
+    margin: 30px 0;
+    padding-right: 25px;
+}
+
+.list ul li a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.list ul li i {
+    color: white;
+}
+
+.home {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding-top: 15rem;
+}
+
+.home h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: white;
+}
+
+.down {
+    color: white;
+    font-size: 2rem;
+    padding-top: 12rem;
+}
+
+/* ===============about=============== */
+
+.about-section {
+    padding: 50px 0;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.title p {
+    text-transform: uppercase;
+}
+
+.title h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.design {
+    border: 1px solid rgb(194, 193, 193);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.design i {
+    color: tomato;
+    font-size: 2rem;
+}
+
+.design h3 {
+    text-transform: capitalize;
+    padding: 18px 0;
+}
+
+.design p {
+    padding-bottom: 25px;
+}
+
+.design a {
+    color: tomato;
+    text-transform: capitalize;
+}
+
+/* ===============card=============== */
+
+.card-section {
+    padding: 50px 0;
+}
+
+.card {
+    background-color: rgb(74, 74, 74);
+    margin: 20px;
+    padding: 5rem 2.5rem;
+    height: 20rem;
+}
+
+.card i {
+    color: tomato;
+    font-size: 30px;
+}
+
+.card h3 {
+    padding: 15px 0;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.card p {
+    color: rgb(138, 137, 137);
+}
+
+/* ==============project============== */
+
+.project-section {
+    padding: 50px 0;
+}
+
+.project {
+    height: 350px;
+}
+
+.item-1 {
+    background-color: rgb(193, 191, 191);
+}
+
+.item-2 {
+    background-color: grey;
+}
+
+.project-info {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.project-info h4 {
+    font-size: 25px;
+}
+
+.project-info p {
+    padding: 5px 0;
+    color: rgb(138, 137, 137);
+}
+
+/* ==============dream============== */
+
+.dream-section {
+    background-color: rgb(40, 40, 40);
+    padding: 5rem 0;
+}
+
+.dream-title {
+    color: white;
+    text-align: center;
+}
+
+.dream-title h4 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.dream-title p {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.dream {
+    height: 250px;
+    background-color: rgb(193, 191, 191);
+}
+
+.dream-1 {
+    background-color: grey;
+}
+
+.dream-2 {
+    background-color: tomato;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.dream-2 i {
+    color: white;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+/* ==============price============== */
+
+.price-section {
+    background-color: rgb(40, 40, 40);
+    padding: 50px 0;
+}
+
+.price {
+    margin: 0 25px;
+}
+
+.price-info {
+    color: white;
+}
+
+.price-info h3 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.price-info p {
+    width: 350px;
+    font-size: 1.2rem;
+}
+
+.price-card {
+    background-color: rgb(63, 62, 62);
+    margin: 0 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.price-card h6 {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.price-card p {
+    padding-bottom: 10px;
+
+}
+
+.price-card-info {
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+    padding: 8px 0;
+}
+
+.price-card h3 {
+    font-size: 2rem;
+}
+
+.price-card-info p {
+    padding-top: 12px;
+}
+
+.price-card-info i {
+    padding-top: 5px;
+}
+
+.price-card ul {
+    padding: 20px 0;
+}
+
+.price-card ul li {
+    padding-bottom: 8px;
+}
+
+.right i {
+    color: tomato;
+    visibility: hidden;
+}
+
+.right:hover i {
+    visibility: visible;
+}
+
+.wrong {
+    color: rgb(160, 159, 159);
+}
+.wrong i{
+    visibility: hidden;
+}
+.wrong:hover i {
+    visibility: visible;
+}
+
+
+
+.price-btn {
+    background-color: tomato;
+    color: white;
+    padding: 10px 40px;
+    border: transparent;
+    font-weight: bold;
+}
+
+
+/* ==============news============== */
+
+.news-section {
+    padding: 60px 0;
+}
+
+.news-title h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.news-bg {
+    background-color: rgb(193, 191, 191);
+    height: 300px;
+}
+
+.news {
+    position: relative;
+    margin: 25px;
+}
+
+.news-info {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    background-color: white;
+    border: 1px solid rgb(193, 191, 191);
+    width: 90%;
+    padding: 15px 30px;
+}
+
+.news-info p {
+    color: rgb(151, 150, 150);
+    padding-bottom: 5px;
+}
+
+.news-info h5 {
+    font-size: 1.5rem;
+}
+
+/* ==============buy============== */
+
+.buy-section {
+    padding: 50px 0;
+}
+
+.buy {
+    background-color: tomato;
+    height: 350px;
+    margin: 25px;
+}
+
+.buy-info {
+    text-align: center;
+}
+
+.buy-info h5 {
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 45px;
+    font-size: 18px;
+    color: tomato;
+    font-weight: bold;
+    border: transparent;
+}
+
+/* ==============footer============== */
+
+.footer {
+    margin: 0 25px;
+    padding: 30px 0;
+}
+
+.footer-logo {
+    color: black;
+}
+
+.footer-list {
+    text-transform: capitalize;
+}
+
+.footer-list li a {
+    color: rgb(88, 88, 88);
+    padding: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.footer-icon ul li a {
+    font-size: 1.5rem;
+    color: tomato;
+}
+
+.footer-info {
+    color: rgb(137, 137, 137);
+    font-size: 1.3rem;
+}
